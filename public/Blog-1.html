@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Blog-Post | BuzzBoost</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="BuzzBoost is a unified platform where global leading agencies, businesses, and influencers connect, collaborate, and drive impactful growth for each other.">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/BuzzBoostImg/file.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/BuzzBoostImg/file.png">
+        <!-- Include Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/demos/demo-business-consulting-5.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-business-consulting-5.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+		<style>
+
+
+
+@media (max-width: 767px) {
+    .zig-zag {
+        flex-direction: column !important; /* Stack elements vertically */
+    }
+
+    /* Ensure the columns are stacked in the correct order */
+    .zig-zag .col-lg-5,
+    .zig-zag .col-lg-4 {
+        order: unset !important; /* Remove default order on mobile */
+    }
+
+    /* Apply the desired order */
+    .zig-zag .col-lg-5 {
+        order: 1 !important; /* Image first */
+    }
+
+    .zig-zag .col-lg-4 {
+        order: 2 !important; /* Text second */
+    }
+
+    .zig-zag h3 {
+        order: unset !important; /* Ensure heading order is normal */
+    }
+
+    .zig-zag p {
+        order: unset !important; /* Ensure paragraph order is normal */
+    }
+}
+
+
+
+.blog-sidebar a {
+    color: black; /* Original color */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.blog-sidebar a:hover {
+    color: #426CC1; /* Blue color on hover */
+}
+
+
+@media (max-width: 768px) {
+  
+.section-blog-content{
+    margin-bottom: 30px !important;
+}
+}
+
+
+/* Container for all sections */
+.section-blog-content {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling on the entire page */
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .page-header {
+        height: 370px !important; /* Adjust height for smaller screens */
+        padding: 8px 10px !important; /* Add padding for better spacing */
+    }
+
+    .page-header .row{
+        margin-top: -25px !important;
+    }
+
+    .page-header h2 {
+        font-size: 30px !important; /* Reduce font size for readability */
+        margin: 30px 0 !important;
+        padding: 0 10px !important; /* Reduce padding for smaller screens */
+    }
+
+    .page-header .d-flex {
+        flex-wrap: wrap !important; /* Allow elements to wrap */
+        justify-content: center !important; /* Center align elements */
+        gap: 15px !important; /* Add spacing between items */
+    }
+
+    .page-header .d-flex span {
+        font-size: 1rem !important; /* Reduce font size for smaller screens */
+        margin-right: 0 !important; /* Remove margin-right as items will stack */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .carousel-blogs .container1 {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px !important;
+        padding: 10px !important;
+    }
+}
+
+@media (min-width:1025px){
+    .container1{
+        max-width: 1000px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+  .carousel-blogs {
+    margin: 15px auto !important;
+  }
+
+  .carousel-blogs h3 {
+    font-size: 30px !important; /* Adjust the font size for mobile */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .carousel-blogs div {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* Single column layout */
+    margin: 0 !important;
+
+  }
+
+  .class-template {
+    width: 100% !important; /* Make the cards take full width */
+    height:360px !important;
+    padding-top: 5px !important;
+    padding-bottom:20px !important;
+  }
+
+  .class-template img {
+    height: auto !important; /* Maintain aspect ratio for images */
+    object-fit: contain !important;
+  }
+
+  .class-template div {
+    /* padding: 10px !important; */
+    margin: 0 !important;
+  }
+
+  .class-template a {
+    /* display: block !important; Makes the <a> a block element for full control */
+    width: 50% !important; /* Reduce the width */
+    margin: 0 auto !important; /* Center-align horizontally */
+    font-size: 1.2rem !important; /* Adjust font size if needed */
+    text-align: center !important; /* Ensure text inside the button is centered */
+  }
+
+  .class-template h3{
+    font-size: 1.2rem !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    
+  }
+  .class-template div {
+
+    font-size: 0.85rem !important; /* Slightly larger font for mobile */
+    text-align: center !important; /* Center-align all text */
+  }
+
+  .class-template div span {
+   display: none !important;
+
+  }
+
+  .mobile-blog{
+    display: block;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .readmore{
+    width: 50%;
+
+  }
+ 
+}
+
+@media (min-width: 769px) {
+    .mobile-blog{
+    display: none !important;
+  }
+}
+
+
+@media (min-width:1001px) and (max-width: 1299px) {
+  .container-blog {
+    flex-direction: column !important; /* Stack the divs vertically */
+  }
+
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; /* Full-width for all divs */
+
+  }
+
+  .leftDiv{
+    display: none !important;
+  }
+
+  
+  
+  .rightDiv {
+   height:430px !important ;
+   width: 60% !important;
+   margin: -300px auto 0 auto !important;
+  }
+
+ 
+
+  h1, h2 {
+    font-size: 1.2rem; /* Adjust heading size for readability */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    line-height: 1.4; /* Improve text readability */
+    text-align: left !important;
+  }
+
+  .section-blog {
+    padding: 10px; /* Reduce section padding for smaller screens */
+  }
+
+  .section3{
+    margin-top: 50px !important;
+  }
+}
+
+@media (min-width: 769px) and(max-width:1000px) {
+    .rightDiv {
+   height:430px !important ;
+   margin-top: 950px !important;
+   width: 100% !important;
+  }
+
+  .container-blog {
+    flex-direction: column !important; /* Stack the divs vertically */
+  }
+
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; /* Full-width for all divs */
+
+  }
+
+  .leftDiv{
+    display: none !important;
+  }
+}
+
+
+   
+.section-blog {
+  /* min-height: 100vh; */
+  /* padding: 20px; */
+}
+
+.container-blog {
+  display: flex;
+
+}
+
+.leftDiv {
+  width: 20%;
+  padding: 5px;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: 420px;
+}
+
+.innerDiv {
+  width: 60%;
+  padding: 5px;
+  height: 335rem;
+
+}
+
+.rightDiv{
+    width: 20%;
+  padding: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: 420px; /* Adjust height based on content */
+}
+
+@media (min-width:1800px) {
+
+.innerDiv {
+width: 60%;
+padding: 5px;
+height: 335rem;
+
+}
+}
+
+
+@media (max-width: 768px) {
+  .container-blog {
+    flex-direction: column !important; /* Stack the divs vertically */
+  }
+
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; /* Full-width for all divs */
+
+  }
+
+  .rightDiv {
+    width: 80% !important; /* Reduce the width */
+    margin: 0 auto !important; /* Center-align horizontally */
+    height: 450px !important;
+    margin-top: 2550px !important; /* Keep the vertical margin if necessary */
+    display: block; /* Ensure proper display for centering */
+  }
+
+  .leftDiv{
+    display: none !important;
+  }
+
+  
+  
+  /* .rightDiv {
+   height:430px !important ;
+   margin-top: 2550px !important;
+   width: 100% !important;
+  } */
+
+ 
+
+  h1, h2 {
+    font-size: 1.2rem; /* Adjust heading size for readability */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    line-height: 1.4; /* Improve text readability */
+    text-align: left !important;
+  }
+
+  .section-blog {
+    padding: 10px; /* Reduce section padding for smaller screens */
+  }
+
+  .section3{
+    margin-top: 50px !important;
+  }
+}
+
+@media (min-width:769px) and (max-width: 992px) {
+  .container-blog {
+    flex-direction: column !important; /* Stack the divs vertically */
+  }
+
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; /* Full-width for all divs */
+
+  }
+
+  .leftDiv{
+    display: none !important;
+  }
+
+  
+  
+  .rightDiv {
+   height:430px !important ;
+   /* margin-top: 950px !important; */
+   width: 60% !important;
+   margin: 1100px auto 0 auto !important;
+   /* display: flex !important;
+   justify-content: center !important; */
+  }
+
+ 
+
+  h1, h2 {
+    font-size: 1.2rem; /* Adjust heading size for readability */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    line-height: 1.4; /* Improve text readability */
+    text-align: left !important;
+  }
+
+  .section-blog {
+    padding: 10px; /* Reduce section padding for smaller screens */
+  }
+
+  .section3{
+    margin-top: 50px !important;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel-blogs .class-template {
+    margin: 0 auto !important;
+    width: 120% !important;
+  }
+  .class-templatediv{
+    width: 120px;
+  }
+}
+		</style>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+		<meta name= "robots" content="index, follow">
+	</head>
+
+	<body class="alternative-font-7">
+		<div class="body mt-0" style="background-color: white !important;">
+            <div class="landing-section" style="background-image: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/BlogImage1.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;">
+
+                <header id="header" class="header-effect-shrink "
+                data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 90}">
+                <div class="header-body border-top-0 header-shadow">
+                    <div class="header-top">
+                        <div class="container">
+                            <div class="header-row">
+                                <div class="header-column justify-content-start">
+                                    <div class="header-row">
+                                        <ul class="list list-unstyled list-inline mb-0">
+                                            <li class="list-inline-item text-color-dark me-md-4 mb-0">
+                                                <i class="icons icon-phone text-4 position-relative top-2 me-1"></i>
+                                                <a href="tel:+919356385744"
+                                                    class="text-color-dark text-color-hover-primary text-decoration-none">
+    
+                                                    <strong>+91 9356385744</strong>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item text-color-dark me-4 mb-0 d-none d-md-inline-block">
+                                                <i class="icons icon-envelope  text-4 position-relative top-4 me-1"></i>
+                                                <a href="mailto:support@ascentialabs.com"
+                                                    class="text-color-dark text-color-hover-primary text-decoration-none text-2">
+                                                    <strong>support@ascentialabs.com</strong>
+                                                </a>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header-column justify-content-end">
+                                    <div class="header-row">
+                                        <ul class="header-social-icons social-icons social-icons-clean">
+                                            <li class="social-icons-whatsapp"><a href="https://wa.me/61412566906"
+                                                    target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                            </li>
+                                            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/ascentialabs/"
+                                                    target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li class="social-icons-instagram"><a href="https://www.instagram.com/ascentialabs/"
+                                                    target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-container container container-xl-custom">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-row">
+                                    <div class="header-logo ">
+                                        <a href="/">
+                                            <img alt="ascentialabs" width="235" height="63" src="img/ascentialabslogopng.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-column justify-content-end">
+                                <div class="header-row">
+                                    <div
+                                        class="header-nav header-nav-line header-nav-bottom-line header-nav-bottom-line-effect-1 order-2 order-lg-1">
+                                        <div
+                                            class="header-nav-main header-nav-main-square  header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                            <nav class="collapse">
+                                                <ul class="nav nav-pills" id="mainNav">
+                                                    <li>
+                                                        <a class="nav-link active" href="index.html">
+                                                            Home
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="nav-link" href="about-us">
+                                                            About Us
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-item dropdown-toggle" style="cursor: pointer;">
+                                                            Services
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <div class="row py-2  ps-3 ">
+                                                                <div class="">
+                                                                    <div class="" style="font-size: 17px;">
+                                                                        <a class="nav-link text-dark"> <i class="bi bi-gear-fill pe-2"></i> Web Development</a>
+                                                                        <a class="nav-link text-dark"><i class="bi bi-file-earmark-code-fill pe-2"></i> Saas Development</a>
+                                                                        <a class="nav-link text-dark"><i class="fa-solid fa-mobile pe-2"></i> Mobile App Development</a>
+                                                                        <a class="nav-link text-dark"> <i class="bi bi-cart-fill pe-2"></i> E-Commerce</a>
+                                                                        <a class="nav-link text-dark"><i class="fa-solid fa-laptop-code pe-1"></i> Software Development</a>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="col-lg-4">
+                                                                    <div class="">
+                                                                        <h6 class="font-weight-bold">Technology Offering For
+                                                                        </h6>
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;">Start
+                                                                            Ups</a>
+    
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;">Public
+                                                                            Entities</a>
+    
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;">Enterprises</a>
+    
+                                                                    </div>
+                                                                    <div class="mt-lg-3">
+                                                                        <h6 class="font-weight-bold">Research & Development
+                                                                        </h6>
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;">Market
+                                                                            Research</a>
+    
+                                                                    </div>
+    
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="">
+                                                                        <h6 class="font-weight-bold">Software Development
+                                                                        </h6>
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;"
+                                                                            href="enterprise-resource-planing">ERP
+                                                                            Software Development</a>
+    
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;"
+                                                                            href="complaint-management-system">Custom
+                                                                            CRM</a>
+    
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;"
+                                                                            href="libraray-management-system">Library
+                                                                            Management System</a>
+    
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;">Micro
+                                                                            Services</a>
+    
+                                                                    </div>
+                                                                    <div class="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="">
+                                                                        <h6 class="font-weight-bold">Ideation & Product
+                                                                            Design</h6>
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;">UI/UX</a>
+    
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <h6 class="font-weight-bold">Artificial Intelligence
+                                                                        </h6>
+    
+                                                                        <a class="nav-link text-dark"
+                                                                            style="font-size: 15px;">Generative
+                                                                            AI</a>
+    
+                                                                    </div>
+                                                                </div> -->
+                                                            </div>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-item dropdown-toggle" style="cursor: pointer;">
+                                                            Industries
+                                                        </a>
+                                                        <ul class="dropdown-menu"
+                                                            >
+                                                            <div class="row py-1 px-2 ps-lg-4">
+                                                                <div class="col-lg-4 " style="font-size: 17px;">
+    
+                                                                    <a class="nav-link text-dark py-2"><i
+                                                                            class="fa-solid fa-paw pe-2 ps-1"></i>
+                                                                        PetCare</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2"
+                                                                        href="education-app-development"><i
+                                                                            class="fa-solid fa-school pe-2 "></i>
+                                                                        Education</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2" href="travel-app-development"><i
+                                                                            class="fa-solid fa-plane pe-2 "></i> Travel
+                                                                        & Tourism</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2"
+                                                                        href="healthcare-app-development"><i
+                                                                            class="fa-solid fa-hand-holding-medical pe-2 "></i>
+                                                                        Health Care</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2"
+                                                                        href="ecommerce-app-development"><i
+                                                                            class="fa-solid fa-cart-shopping pe-2 "></i>
+                                                                        E-Commerce</a>
+                                                                    
+                                                                    <a class="nav-link text-dark py-2"
+                                                                    href="complaint-management-system"><i class="fa-solid fa-clipboard-list ps-1 pe-2"></i>
+                                                                  Custom  CRM</a>
+    
+                                                                </div>
+                                                                <div class="col-lg-4" style="font-size: 17px;">
+    
+                                                                    <a class="nav-link text-dark py-2"
+                                                                        href="logistics-software-development"><i
+                                                                            class="fa-solid fa-arrow-right-to-bracket pe-2 "></i>
+                                                                        Logistics</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2 "><i
+                                                                            class="fa-solid fa-square-parking pe-2"></i>
+                                                                        Parking</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2"><i
+                                                                            class="fa-solid fa-notes-medical pe-2"></i>
+                                                                        Wellness & Health</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2"><i
+                                                                            class="fa-solid fa-scale-unbalanced pe-2"></i>After
+                                                                        Sale Service</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2"><i
+                                                                            class="fa-solid fa-utensils pe-2"></i>
+                                                                        Restaurant</a>
+    
+                                                                    <a class="nav-link text-dark py-2"
+                                                                    href="library-management-system"><i class="fa-solid fa-book pe-2"></i></i>
+                                                                    Library</a>    
+    
+                                                                </div>
+                                                                <div class="col-lg-4" style="font-size: 17px;">
+    
+    
+                                                                    <a class="nav-link text-dark py-2" href="real-estate-app-development"><i
+                                                                        class="fa-solid fa-house-chimney pe-2"></i>
+                                                                    Real Estate</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2"><i
+                                                                            class="fa-solid fa-wheat-awn pe-2"></i>
+                                                                        Agriculture</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2"><i
+                                                                            class="fa-solid fa-industry pe-2"></i>
+                                                                        Manufacturing</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2" href="interior-design-app-development"><i
+                                                                            class="fa-solid fa-building-columns pe-2"></i>
+                                                                        Interior & Architecture</a>
+    
+    
+                                                                    <a class="nav-link text-dark py-2"><i
+                                                                            class="fa-solid fa-receipt pe-2"></i>
+                                                                        Accounting</a>
+    
+                                                                    <a class="nav-link text-dark py-2"
+                                                                    href="enterprise-resource-planing"><i class="fa-solid fa-pager pe-2"></i>
+                                                                    ERP</a>
+    
+                                                                </div>
+                                                            </div>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a class="nav-link" href="Blog-main.html">
+                                                            Blog
+                                                        </a>
+                                                    </li>
+                                                    <!-- <li class="dropdown">
+                                                        <a class="dropdown-item dropdown-toggle" style="cursor: pointer;">
+                                                            Portfolio
+                                                        </a>
+                                                        <ul class="dropdown-menu" style="font-size: 18px;">
+                                                            <li>
+                                                                <a class="nav-link text-dark" href="">Centra Greens</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nav-link text-dark" href="">Pumpkins</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nav-link text-dark" href="">Keva Industries</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nav-link text-dark" href="">Clay</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="nav-link text-dark" href="">Airnets Travels &
+                                                                    Cargo</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li> -->
+                                                    <li>
+                                                        <a class="nav-link" href="contact-us">
+                                                            Contact
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
+                                            data-bs-target=".header-nav-main nav">
+                                            <i class="fas fa-bars"></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-none d-sm-inline-flex order-1 order-lg-2 ms-2">
+                                        <ul class="header-extra-info d-flex">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+    <section id="section1" class="section-blog">
+      <section class="page-header page-header-modern page-header-lg border-0 my-0">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 450px;">
+            <div class="row text-center">
+                <div class="col-md-12 align-self-center" style="color: white;">
+                    <h2 style="color: white; font-size: 48px; margin: 70px 0; line-height: normal; padding: 0 60px;letter-spacing: 2px;">
+                        How Did Travel App Development Become Crucial In The Tourism Industry
+                    </h2>
+                    <div class="d-flex justify-content-center mt-5 mb-5">
+                        <span style="font-size: 1.5rem; margin-right: 30px;">
+                            <img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">Arham Jain
+                        </span>
+                        <span style="font-size: 1.5rem; margin-right: 30px;">
+                            <img src="img/BlogPage/calendar 1.png" alt="calendar" height="20px" width="20px" style="margin-right: 4px;">18/06/2024
+                        </span>
+                        <span style="font-size: 1.5rem;">
+                            <img src="img/BlogPage/wall-clock 1.png" alt="clock" height="20px" width="20px" style="margin-right: 4px;">7 min
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+
+            </div>
+
+		<div role="main" class="main" style="background-color: white !important;">
+            <section id="section2" class="section-blog">
+                <div class="container container-blog">
+                  <div class="leftDiv mt-5">
+                    <div class="blog-sidebar pt-4 pt-lg-0" style="display: flex;justify-content: flex-start;max-height: 450px;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" >
+                        <aside class="sidebar">
+                            <div class="px-2 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7;border-radius: 12px;">
+                                <h3 class="text-color-quaternary text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline;text-align: center;">Table Of Content</h3>
+                                <div style="max-height: 365px;overflow-y: auto;scrollbar-color: #007bff #e7e7e7; scrollbar-width: thin;padding-right: 10px;">
+                                <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#introduction">1. Introduction</a> </p>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#power">2. The Power Of Influence In 2025</a></p>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#agencies">3. Why Agencies & Businesses Should Hire Influencers</a> </p>
+                                <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                                    <li><a href="blog-post.html#visibility">3.1 Increased Agency And Business Visibility And Reach</a></li>
+                                    <li><a href="blog-post.html#authenticity">3.2 Authenticity And Credibility</a></li>
+                                    <li><a href="blog-post.html#targeted">3.3 Targeted Marketing</a></li>
+                                    <li><a href="blog-post.html#conversions">3.4 Increase In Sales And Customer Conversions</a></li>
+                                </ul>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#ignoring">4. The Cost of Ignoring Influencer Marketing in [2025]</a> </p>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#real">5. Real Life Success Stories</a></p>
+                                <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                                    <li><a href="blog-post.html#eg1">5.1 Example 1: Daniel Wellington (Watch Brand)</a></li>
+                                    <li><a href="blog-post.html#eg2">5.2 Example 2: Chipotle (Fast Food Chain) </a></li>
+                                </ul>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#conclusion">6. Conclusion</a></p>
+                            </div>
+                        </div> 
+                        </aside>
+                    </div>
+                  </div>
+                  <div class="innerDiv mt-5">
+                    <div class="mb-5 mb-lg-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" style="margin-right: 10px;">
+                        <div class="blog-content">
+                            <p>In this modern millennium, technology is everything in many aspects of our lives including travel. With the growing demand for smartphones and mobile applications, it has become a crucial step to have a mobile app to run any business successfully, and this is why Travel App Development has become a vital tool for travel companies, and agencies in the travel and tourism industry. <br><br>
+                                According to a report by Statista, 28% of the travelers worldwide, have used a travel agency travel mobile app to book different travel services before the Covid - 19, and at the same time 33% of the travelers worldwide have said that they would like to use travel agency specific travel application in future to plan their travel trips. <br><br>
+                                This blog will help you to understand how travel app development is becoming a key factor in the travel and tourism industry, with some other key aspects like, how travel apps can increase the travel experience of travelers by incorporating modern technology in these apps. So why to wait, let’s deep dive into the details!  <br><br>
+                            </p>
+
+                            <h2>The Rise of Mobile Technology in Travel</h2>
+                            <p>Travel applications make it easy and efficient for travelers to organize their trips, get information on vital tourist places, and help travelers to stay organized while traveling. These travel applications have several features including flight booking, hotel bookings as well as a reservation at local tourist attractions and restaurants; with real-time updates on weather and flights. <br><br>
+                                Furthermore, the advent of mobile technology has opened new doors for travel companies and travel service providers. With the travel mobile app, travel service providers can now communicate directly with their clients and resolve their queries, provide their clients with customized travel packages service based on their customer's travel persona, with a simple and user-friendly booking and online payment portal. Additionally, this is also a way of ensuring that consumers are satisfied with the travel services while at the same time, it also helps the travel service providers to gather vital data about their customer's travel behavior as well as their travel preferences. <br><br>
+                                As per the report by Statista, the travel application market is forecasted to increase continuously from 2021, right just after the covid. Currently, the capitalization of the travel app market is at $1.25B US Dollars and it is expected that the travel app market will reach the mark of $2 Billion US dollars by 2027. <br> <br>
+                            </p>
+
+                            <h2>Why Are Travel Apps Preferred For Travel? </h2>
+                            <p>With the rise in modern technology, travel apps have also transformed how people book and enjoy their travel trips. Many travel mobile applications provide various benefits, such as booking flight tickets, hotels, and making a personalized travel itinerary with real-time price updates on flights and hotel reservations that traditional approaches just cannot match.</p>
+                            <div class="zig-zag"></div>
+
+                            <h2>Unlocking Digital Opportunities - Travel App in the Travel Tourism Sector</h2>
+                            <p>Travel applications are creating new digital transformations & opportunities in the travel and tourism industry by changing the way people plan, book, and experience their travel trips. <br><br>
+                               The Impact of Travel Mobile Apps on the Travel Tourism Industry <br><br>
+                               According to travel and tourism industry statistics:
+                               <img src="" alt="">
+                               The above data clearly shows us the importance and the rising demand for travel apps among travelers. Let's now take a deep dive and delve into how AI (Artificial Intelligence) and Machine Learning two modern and widely used technologies are integrated into travel apps, through which travel companies, agencies, and agents can provide tailored travel experiences to their clients. <br><br>
+                            </p>
+
+                            <h2>Integration of AI and Machine Learning in Travel Apps</h2>
+                            <p>The integration of AI (Artificial Intelligence) and Machine Learning in travel apps has transformed the way travelers travel the world. Such technologies enable travel apps to deliver personalized and customized travel recommendations to consumers, by doing predictive analysis of the traveler's data and providing real-time support to travelers, thereby improving the efficiency and overall enjoyment of consumers' travel experience. <br><br>
+                             <img src="" alt="">
+                             With predictive analysis, artificial intelligence and machine learning in travel apps can analyze massive amounts of traveler data, such as the latest travel trends among different travelers around the world, weather patterns, to forecast future travel patterns and provide tourists with personalized travel recommendations based on the findings. For example, if a traveler is planning to visit a nearby beach during their ongoing travel trip, the travel app will provide the consumer with the list of best beaches in the nearby location of the traveler, with the indication of the optimal time to go based on past weather data.
+                             <br><br>
+                             Furthermore, AI and Machine Learning can also help to improve the safety and security elements of travel apps. These technologies can examine user travel behavior and trends to identify potential threats or abnormalities, such as fraudulent activity or dangerous travel routes., and by identifying these dangers in real time, travel applications can present travel users with timely alerts and recommendations to ensure their safety while traveling.
+                            </p>
+
+                            <h2>Future Trends in Travel App Development</h2>
+                            <p>Virtual Reality (VR) and Augmented Reality (AR):  AR and VR have the potential to completely transform the way we travel the world. In the future, travel apps may include VR and AR elements that allow users to visually explore tourist places, observe famous tourist attractions in 3D, and receive real-time information and insights.
+                                <br><br>
+                                Voice Recognition: With the popularity and the advancement of AI in voice assistants and with 93.7% of search queries being answered perfectly by voice assistants, it is now possible to say that travel apps may include voice recognition in the coming 2-3 years. This means that users will now have the ability to utilize voice commands to search for and book travel services such as flight tickets, hotel bookings, and reservations, which simplifies the entire travel booking process.
+                                <br><br>
+                                AI Chatbot-Based Customer Support: A number of travel apps currently use AI chatbots for different travel services to provide quick customer support and guidance to travelers. Travelers are using AI chatbots to know any specific information they want to know about their travel before, during, or after their travel journey.
+                            </p>
+
+                            <h2>Conclusion</h2>
+                            <p>To summarize, travel app development has become a crucial thing in the travel and tourism industry, as we now know how travel apps can transform travel plans and increase the overall experience of the travel customers during their travel trip. These apps provide the users with real-time access to flight bookings, hotel bookings with personalized travel recommendations to consumers. Such travel applications have also promoted sustainability in travel and tourism practices by harnessing technology, in addition to improving cost efficiency and facilitating communication. As the travel tourism sector evolves, travel applications will play an increasingly important role in driving innovation and changing the future of travel and tourism industry through improved accessibility and efficiency, with an increased awareness on eco tourism.
+                            </p>
+
+                            <a href="Blog-main.html" style="color: #0052CD;"><i class="fas fa-arrow-left"></i> Return To Blogs</a>                        
+                                </div>
+                        </div>
+                  </div>
+
+            <div class="rightDiv mt-5">
+                <div class="px-2 ml-5 display-flex justify-content-end" 
+                    style="height: 420px; position: relative;border-radius: 15px;overflow:hidden; background: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/ctablog1.png') no-repeat center center; background-size: cover;">
+                   
+                   <!-- Form Overlay -->
+                   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5); color: #fff;">
+                       <form style="text-align: center; max-width: 80%; margin-top:80px;" class="contact-form" id="contact-form" method="POST">
+                           <h3 style="margin-bottom: 20px; font-size: 1.1rem;color: white;text-align: left;line-height: 21px;letter-spacing: normal;">Ready to amplify your brand's reach and impact in 2025?</h3>
+                           <input type="text" name="name" placeholder="Your Name" id="name" 
+                                  style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
+                           <input type="email" name="email" placeholder="Your Email Address" id="email"
+                                  style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
+                           <input type="text" name="phone" placeholder="Your Phone Number" id="phone"
+                                  style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
+                           <input type="text" name="message" placeholder="Message" id="message"
+                                  style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
+                           
+                           <button type="submit" onclick="sendForm()"
+                                   style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
+                               Submit
+                           </button>
+                       </form>
+                   </div>
+                </div>
+                  </div>
+                </div>
+              </section>
+            
+              <section id="section3" class="section-blog" style="margin-top: 80px;">
+                <div class="line" style=" width: 120px;height: 4px;background-color: #426cc1;margin: 0 auto 20px;"></div>
+
+                <section class="container1 carousel-blogs" style="margin:30px auto;">
+                    <h3 class="text-center" style="font-size: 40px;color: #426CC1;margin-bottom: 30px;margin-top: 20px;">Other Blogs</h3>
+                    <div class="container" style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 50px;margin-bottom: 40px;">
+                        <!-- Card Template -->
+                        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 265px;">
+                            <!-- Adjusted image -->
+                            <img src="img\blog\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+                        
+                            <!-- Removed extra spacing -->
+                            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                                <!-- Compact heading -->
+                                <h3 style="font-size: 1.1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.25;font-weight: 500;padding-left: 4px;padding-right: 4px;margin-top: 10px;">
+                                    <a href="" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                                </h3>
+                                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;padding-left: 4px;padding-right: 4px;">
+                                    <div class="class-templatediv">
+                                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                                    <span style="color: #888;">24/12/2024</span>
+                                    <p class="mobile-blog">As the technology evolves with each passing year, influencer marketing is...</p>
+                                    </div>
+                                    <div>
+                                    <a class="readmore" href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                </div>
+                                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                                </div>
+                           
+                            </div>
+                        
+                            <!-- Footer -->
+                           
+                        </div>
+                        <!-- Card Template -->
+                        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 265px;">
+                            <!-- Adjusted image -->
+                            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 3 Image (2).png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
+                        
+                            <!-- Removed extra spacing -->
+                            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                                <!-- Compact heading -->
+                                <h3 style="font-size: 1.1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;padding-left: 4px;padding-right: 4px;margin-top: 10px;">
+                                    <a href="" style="text-decoration: none; color: inherit;">How to Reach Out To Right Set Of Influencers in [2025]</a>
+                                </h3>
+                                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;padding-left: 4px;padding-right: 4px;">
+                                    <div class="class-templatediv">
+                                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                                    <span style="color: #888;">02/01/2025</span>
+                                    <!-- <p class="mobile-blog">In the rapidly evolving digital world, hiring perfect influencers...</p> -->
+                                    <p class="mobile-blog">In the rapidly evolving digital world, hiring perfect influencers and collaborating with them...</p>
+
+                                    </div>
+                                    <div>
+                                    <a class="readmore" href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                </div>
+                                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                                </div>
+                           
+                            </div>
+                        
+                            <!-- Footer -->
+                           
+                        </div>
+                         <!-- Card Template -->
+                         <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 265px;">
+                            <!-- Adjusted image -->
+                            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\blogg.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
+                        
+                            <!-- Removed extra spacing -->
+                            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                                <!-- Compact heading -->
+                                <h3 style="font-size: 1.1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;padding-left: 4px;padding-right: 4px;margin-top: 10px;">
+                                    <a href="" style="text-decoration: none; color: inherit;">Influencer Guide: Collaborate with Top Brands in 2025</a>
+                                </h3>
+                                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;padding-left: 4px;padding-right: 4px;">
+                                    <div class="class-templatediv">
+                                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                                    <span style="color: #888;">02/01/2025</span>
+                                    <p class="mobile-blog">Are you an influencer looking out for collaborations with...</p>
+
+                                    </div>
+                                    <div>
+                                    <a class="readmore" href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                </div>
+                                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                                </div>
+                           
+                            </div>
+                        
+                            <!-- Footer -->
+                           
+                        </div>
+                       
+                        <!-- Repeat the card structure 36 times for 6x6 grid -->
+                    </div>
+                
+                  </section>
+              </section>
+
+        </div>
+         
+
+ <!-- section form 7 -->
+ <section class="section m-0 border-0">
+    <div class="container">
+        <div class="row justify-content-between align-items-center ">
+            <div class="col-lg-6 text-center text-lg-start py-5">
+                <h2 class="mb-4 ready-to-transform" style="font-weight:400;font-size: 44px;">
+                    Ready To Transform
+                    <span>→</span>
+                    Let’s Chat on WhatsApp
+                </h2>
+                <p class="text-4  line-height-4 opacity-6 mb-4">Got questions? Need guidance on
+                    finding the right influencers? Our team is just a WhatsApp message away!</p>
+
+                <i class="icons icon-phone text-8 text-color-primary me-2"></i>
+                <a href="tel:+919796297972" style="color: #000;"
+                
+                    class="text-6 p-relative bottom-9 text-decoration-none">+91 9796297972
+                    </a>
+
+            </div>
+            <div class="col-lg-5 py-5">
+                <div class="border-radius bg-color-light border-0 box-shadow-3">
+                    <div class="card-body p-5 m-2 text-center">
+                        <h4 class="card-title mb-2 text-6" style="font-weight: 500;">Get In Touch</h4>
+                        <p class="card-text">Fill your details and tap the button below to start a chat with our support team.</p>
+            
+                        <form id="whatsappForm" class="contact-form">
+                            <div class="row">
+                                <div class="form-group col text-start">
+                                    <input type="text" id="name" placeholder="Your Name *" maxlength="100"
+                                        class="form-control text-2-5 p-3" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col text-start">
+                                    <input type="text" id="phone" placeholder="Your Phone *" maxlength="100"
+                                        class="form-control text-2-5 p-3" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
+                                    <div class="d-grid gap-2">
+                                        <button id="whatsappButton" type="button" class="btn btn-sm border-0 text-3-5 p-3 custom-btn" 
+                                            style="color: black;border-radius: 25px;">
+                                            <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
+                                                style="margin-right: 8px;">
+                                            Contact Us
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<!-- section footer -->
+	<footer id="footer" class="position-relative  border-top-0 " style="background-color: #426CC1;">
+		<div class="container pt-5-5 pb-3">
+			<div class="row gy-5">
+				<div class="col-lg-4">
+					<h4 class="text-color-light font-weight-bold mb-3">BuzzBoost</h4>
+					<ul class="social-icons">
+						<li class="social-icons-instagram">
+						  <a
+							href="https://www.instagram.com/thebuzzzboost?igsh=MTltemR0Z2c4aHR3dA=="
+							target="_blank"
+							title="Instagram"
+						  >
+							<img src="img\Influencer Page and about us page\Instagram Logo.png" alt="instagram" height="30px" width="30px">
+						  </a>
+						</li>
+						<!-- <li class="social-icons-twitter">
+						  <a
+							href="http://www.twitter.com/"
+							target="_blank"
+							title="Twitter"
+						  >
+							<i class="fab fa-twitter"></i>
+						  </a>
+						</li> -->
+					  
+					  </ul>
+					<!-- <ul class="social-icons ">
+						<li class="social-icons-instagram">
+							<a href="http://www.instagram.com/" target="_blank" title="Instagram">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li class="social-icons-twitter">
+							<a href="http://www.twitter.com/" target="_blank" title="Twitter">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="social-icons-facebook">
+							<a href="http://www.facebook.com/" target="_blank" title="Facebook">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+					</ul> -->
+				</div>
+				<div class="col-lg-8">
+					<div class="row mb-5-5">
+						<div class="col-lg-6 mb-4 mb-lg-0 ">
+							<h4 class="text-color-hover-light font-weight-bold mb-3">Company</h4>
+							<ul class="list list-unstyled columns-lg-1">
+								<li><a href="home.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Home</a></li>
+								<li><a href="aboutus.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">About Us</a></li>
+								<!-- <li><a href="contact.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Register</a></li> -->
+								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Team</a></li> -->
+								<li><a href="blog.html" class="text-color-light text-color-hover-light">Blog</a></li>
+								<!-- <li><a href="#" class="text-color-light text-color-hover-light">Contact Us</a></li> -->
+							</ul>
+						</div>
+						<div class="col-lg-6">
+							<h4 class="text-color-hover-light font-weight-bold mb-3">Services</h4>
+							<ul class="list list-unstyled columns-lg-1">
+								<li><a href="agency.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Agency</a>
+								</li>
+								<li><a href="business.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Business</a></li>
+								<li><a href="Influencer.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Influencers</a></li>
+								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">CRM and Sales</a></li> -->
+								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Strategy</a></li> -->
+							</ul>
+                            <h4 class="text-color-hover-light font-weight-bold mb-3">Resources<h4>
+								<ul class="list list-unstyled columns-lg-1">
+								  <li><a href="blog.html" class="text-color-light text-color-hover-light" style="text-decoration: none;font-weight: 500;font-size: 15px;">Blog</a></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright bg-transparent pb-5">
+			<div class="container">
+				<!-- <hr> -->
+				<div class="row" style="text-align: center;">
+					<div class="col mt-2 mb-2">
+						<p class="text-3 mb-0 text-center text-white">BuzzBoost © 2024. All Rights Reserved.
+						</p>
+						<p class="text-3 mb-0 text-center text-white mt-2">Developed By:-
+						</p>
+						<a href="https://ascentialabs.com/" target="_blank">
+							<img class="Ascentia text-3 mt-2 mb-0 text-center text-white" alt="Ascentia Labs" width="200" height="40" style="margin-bottom: 10px;color: #426CC1;" src="img\BuzzBoostImg\AscentiaLogo.png">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
+		<a href="https://wa.me/+919796297972" target="_blank" rel="noopener noreferrer">
+			<img src="img\whatsappiconfixed.png" 
+				 alt="WhatsApp" 
+				 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
+		</a>
+	</div>
+</div>
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+
+		<!-- Demo -->
+		<script src="js/demos/demo-business-consulting-5.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+
+	</body>
+</html>
