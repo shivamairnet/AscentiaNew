@@ -19,9 +19,9 @@ window.addEventListener('scroll', () => {
 });
 
 // Disable right-click context menu
-document.addEventListener('contextmenu', function(e) {
-	e.preventDefault();
-});
+// document.addEventListener('contextmenu', function(e) {
+// 	e.preventDefault();
+// });
 // document.addEventListener('copy', function(e) {
 // 	e.preventDefault();
 // });
