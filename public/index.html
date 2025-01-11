@@ -57,37 +57,6 @@
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
-    <script>
-        const filterButtons = document.querySelectorAll(".filter-btn");
-        const imageBoxesdiv = document.querySelectorAll(".image-box");
-        
-        filterButtons.forEach((button) => {
-          button.addEventListener("click", () => {
-            // Remove the active class from all buttons
-            filterButtons.forEach((btn) => btn.classList.remove("active"));
-            // Add active class to the clicked button
-            button.classList.add("active");
-        
-            // Get the category of the clicked button
-            const category = button.getAttribute("data-category");
-        
-            // Highlight or fade images based on the category
-            imageBoxesdiv.forEach((box) => {
-              // Get the categories of the current image-box
-              const boxCategories = box.getAttribute("data-category").split("|");
-        
-              if (category === "all" || boxCategories.includes(category)) {
-                box.classList.add("highlight"); // Highlight the filtered images
-              } else {
-                box.classList.remove("highlight"); // Fade the non-filtered images
-              }
-            });
-          });
-        });
-        
-        // Trigger the "All" button on page load
-        document.querySelector(".filter-btn[data-category='all']").click();
-        </script>
 
     <!-- Email.js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -138,34 +107,34 @@
 
 .filter-btn {
   /* background: linear-gradient(90deg, #9abff8, #b1e0f8); */
-  padding: 10px 5px;
-  /* width: 198px; */
+  padding: 15px 20px;
+  /* width: 140px; */
   margin: 1px;
   cursor: pointer;
   background-color: #ffffff;
   color: black;
-  border-radius: 5px;
+  border-radius: 8px;
   border-bottom: 2px solid linear-gradient(90deg, #9abff8, #b1e0f8);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 14px;
   transition: background-color 0.3s ease;
 
 }
 
 
 .filter-btn.active {
-  background-color: #fff;
-  color: black;
-  border: 2px solid #005ce6;
+  background-color: #0052CD;
+  color: white;
+  border: 2px solid white;
 }
 
 .filter-btn:hover {
   background-color: #fff;
   color: black;
-  border-bottom: 2px solid #007bff;
+  border: 2px solid #007bff;
 }
 
-.image-container {
+.image-container-logo {
 
   display: flex;
   flex-wrap: wrap;
@@ -177,16 +146,16 @@
   width: 180px;
   height: 97px;
   overflow: hidden;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   background-color: #fff;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  opacity: 0.4; /* Default faded look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* opacity: 0.4; */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .image-box img {
   object-fit: contain;
-  width: 100%;
+  width: 40%;
   height: 100%;
 }
 
@@ -1939,12 +1908,12 @@
 
             <section class="section-logos container" style="margin-top: 75px;text-align: center;">
 
-                <div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+                <div class="divider divider-small divider-small-lg mt-0 text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
                     <hr class="bg-primary border-radius m-auto">
                 </div>
                 <div class="overflow-hidden mb-1">
                     <h3 class="font-weight-bold text-color-dark positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Technology Stack</h3>
-                    <p>We leverage cutting-edge technologies to craft exceptional digital experiences.</p>
+                    <p class="text-color-dark appear-animation" style="font-size: 20px;font-weight: bold;" data-appear-animation="maskUp" data-appear-animation-delay="100">We leverage cutting-edge technologies to craft exceptional digital experiences.</p>
                 </div>
 
                 <div class="filter-section text-center mt-5">
@@ -1959,145 +1928,190 @@
                     <button class="filter-btn active" data-category="ai">AI</button>
                 </div>
 
-                <div class="image-container" style="margin-top: 55px;padding: 0;margin: 0;">
-                    <div data-category="wireless" class="image-box">
-                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\android.png" height="50px" width="60px"
-                         alt="">
+                <div class="image-container-logo" style="margin-top: 55px;padding: 0;margin: 0;">
+                    <div data-category="mobile" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\android.png" height="30px" width="30px"
+                         alt=""><span style="color: #000;font-weight: bold;">Android</span>
                     </div>
-                    <div data-category="bandwidth" class="image-box">
-                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Angular.png" alt="" height="50px" width="60px">
+                    <div data-category="frontend" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Angular.png" alt="" height="20px" width="20px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Angular</span>
                     </div>
-                    <div data-category="switches|storage-and-servers" class="image-box">
-                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\apache nifi.png" alt="" height="50px" width="60px">
+                    <div data-category="switches|storage-and-servers" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\apache nifi.png" alt="" height="30px" width="30px" 
+                        > <span style="color: #000;font-weight: bold;font-size: 18px;">Apache</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
-                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\aws.png" alt="" height="50px" width="60px">
+                    <div data-category="cloud-db" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\aws.png" alt="" height="30px" width="30px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Aws</span>
                     </div>
-                    <div data-category="transportation" class="image-box">
+                    <div data-category="designing" class="image-box" style="color: #000;">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\blender.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Blender</span>
                     </div>
-                    <div data-category="switches|wireless" class="image-box">
+                    <div data-category="frontend" class="image-box" style="color: #000;">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\bootstrap.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Bootstrap</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="ai" class="image-box" style="color: #000;">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\calude ai.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Claude AI </span>
                     </div>
-                    <div data-category="switches" class="image-box">
+                    <div data-category="databases" class="image-box" style="color: #000;">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\Cassandra.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Cassandra </span>
                     </div>
-                    <div data-category="ip-telephones" class="image-box">
+                    <div data-category="frontend" class="image-box" style="color: #000;">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\CSS.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">CSS </span>
                     </div>
-                    <div data-category="ip-telephones|storage-and-servers|switches" class="image-box">
+                    <div data-category="frontend" class="image-box" style="color: #000;">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\Ember.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Ember</span>
                     </div>
-                    <div data-category="load-balancer" class="image-box">
+                    <div data-category="designing" class="image-box" style="color: #000;">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\figma.png" alt="" height="40px" width="50px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Figma</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="digital-signage" class="image-box" style="color: #000;">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\Firebase.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Firebase</span>
                     </div>
-                    <div data-category="ip-telephones" class="image-box">
+                    <div data-category="mobile" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\flutter.png" alt="" height="40px" width="50px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Flutter</span>
                     </div>
-                    <div data-category="transportation|load-balancer" class="image-box">
+                    <div data-category="designing" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\Framer logo.png" alt="" height="40px" width="50px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Framer</span>
+
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="ai" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\gamma ai.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Gamma Ai</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="ai" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\gemini logo.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Gemini Ai</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="backend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\go.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Go</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="data-analytics" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\google analytics.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Google Analytics</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="cloud-db" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\google cloud.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Google Cloud</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="frontend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\HTML 5.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">HTML 5</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="mobile" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\ios.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">IOS</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="frontend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\Java Script.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Javascript</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="backend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\Java.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Java</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="mobile" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\kotlin.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Kotlin</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="cloud-db" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\microsoft azure.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Microsoft Azure</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="databases" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\mongo db.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Mongo Db</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="databases" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\mysql.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Mysql</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="backend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\net.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Net</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="backend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\node js.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Node Js</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="backend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\next js.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Next Js</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="ai" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\open ai logo.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Open Ai</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="cloud-db" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\oracle cloud.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Oracle Cloud</span>
                     </div>
                     <div data-category="wireless" class="image-box">
-                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\oracle logo.png" alt="" height="50px" width="60px">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\oracle logo.png" alt="" height="50px" width="60px">Oracle
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="designing" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\photoshop logo.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Photoscope</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="backend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\php.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Php</span>
                     </div>
-                    <div data-category="wireless" class="image-box">
+                    <div data-category="data-analytics" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\power bi.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Power Bi</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="backend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\python.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Python</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="data-analytics" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\pytorch.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Pytorch</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="frontend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\React.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">React</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="cloud-db" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\salesforce.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Salesforce</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="designing" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\sketchup.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Sketchup</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="mobile" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\swift.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Swift</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="frontend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\tailwind css.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Tailwind</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="data-analytics" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\tensor flow.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Tensor Flow</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="frontend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\typescript.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Typescript</span>
                     </div>
-                    <div data-category="digital-signage" class="image-box">
+                    <div data-category="frontend" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\Vue Js.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 18px;">Vue Js</span>
                     </div>
                 </div>
             </div>
@@ -2112,25 +2126,24 @@
         
                 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
     
-                    <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 15px;">
-                        <img src="img\home page\Home Page Product Logos\Route Maestro Logo.png" alt="RouteMaestro" style="width: 50px; height: 50px; border-radius: 50%;">
-                        <div>
+                    <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                        <img src="img/home page/Home Page Product Logos/Route Maestro Logo.png" alt="RouteMaestro" style="width: 150px; height: 50px;margin-top: 75px;">
+                        <div style="text-align: center;">
                             <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #000;">RouteMaestro</h4>
                             <p style="font-size: 1rem; color: #000;">An AI-Powered Travel CRM.</p>
                         </div>
-                    </div>
-            
+                    </div>                               
                 
                     <div style="display: flex; flex-direction: column; gap: 20px;">
                         <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 15px;">
-                            <img src="img\home page\Home Page Product Logos\Insurance Expert.png" alt="Insurance Experts" style="width: 50px; height: 50px; border-radius: 50%;">
+                            <img src="img\home page\Home Page Product Logos\Insurance Expert.png" alt="Insurance Experts" style="width: 100px; height: 100px;">
                             <div>
                                 <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #000;">Insurance Experts</h4>
                                 <p style="font-size: 1rem; color: #000;">Get instant & personalized online video assistance for your pets health!</p>
                             </div>
                         </div>
                         <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 15px;">
-                            <img src="path-to-image3.jpg" alt="KinderConnect" style="width: 50px; height: 50px; border-radius: 50%;">
+                            <img src="img\home page\Home Page Product Logos\Frame 1000002695.png" alt="KinderConnect" style="width: 130px; height: 70px;">
                             <div>
                                 <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #000;">KinderConnect</h4>
                                 <p style="font-size: 1rem; color: #000;">Simplifying kindergarten management and communication.</p>
@@ -2138,9 +2151,8 @@
                         </div>
                     </div>
             
-            
                     <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 15px;">
-                        <img src="img\home page\Home Page Product Logos\JusDoIt.png" alt="JustDoIt" style="width: 50px; height: 50px; border-radius: 50%;">
+                        <img src="img\home page\Home Page Product Logos\JusDoIt.png" alt="JustDoIt" style="width: 150px; height: 50px;">
                         <div>
                             <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #000;">JustDoIt</h4>
                             <p style="font-size: 1rem; color: #000;">Simplify tasks and boost your employees productivity.</p>
@@ -2149,62 +2161,64 @@
                 </div>
             </div>
             </section> 
-            <section class="section-number-section container" style="padding: 50px; background-color: white;color: #000;">
+            <!-- number game section -->
+				<section class="number-section section border-0 m-0 p-relative">
+					<div class="particles-wrapper z-index-1">
+						<div id="particles-1"></div>
+					</div>
+					<div class="container py-5 p-relative z-index-2">
+						<div class="row">
+							<div class="col text-center">
+			
+								<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+									<hr class="bg-primary border-radius m-auto">
+								</div>
+								<div class="overflow-hidden mb-1">
+									<!-- <h3 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our ICT Solutions Stats</h3> -->
+								</div>
+								<h2 class="text-black font-weight-bold text-8 pb-4 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Our Numbers Define Us Who We Are</h2>
+                                <p class="text-5" style="color: #555;">Our numbers tell the story of our dedication, expertise, unwavering pursuit of excellence, and tells why we reaffirm our position as leaders in the industry.</p>
+							</div>
+						</div>
+						<div class="row pt-4 pb-3 counters text-light appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+							<div class="col-lg-3 mb-4 mb-lg-0 text-black">
+								<div class="counter">
+									<strong data-to="35" data-append="+">0</strong>
+									<label class="font-weight-semibold mt-3" style="color: #0053ce;">Business Years</label>
+								</div>
+							</div>
+							<div class="col-lg-3 mb-4 mb-lg-0 text-black">
+								<div class="counter">
+									<strong data-to="240" data-append="+">0</strong>
+									<label class="font-weight-semibold mt-3" style="color: #0053ce;">Clients</label>
+								</div>
+							</div>
+							<div class="col-lg-3 mb-4 mb-sm-0 text-black">
+								<div class="counter">
+									<strong data-to="2000" data-append="+">0</strong>
+									<label class="font-weight-semibold mt-3" style="color: #0053ce;">Projects</label>
+								</div>
+							</div>
+							<div class="col-lg-3 mb-4 mb-sm-0 text-black">
+								<div class="counter">
+									<strong data-to="130" data-append="+">0</strong>
+									<label class="font-weight-semibold mt-3" style="color: #0053ce;">Team Members</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-                <div style="text-align: center; margin-bottom: 30px;">
-                    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 10px;color: #000;">Our Numbers Define Us Who We Are</h2>
-                    <p style="font-size: 1rem; color: #000;">Our numbers tell the story of our dedication, expertise, unwavering pursuit of excellence, <br> and tells why we reaffirm our position as leaders in the industry.</p>
-                </div>
-            
-        
-                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
-    
-                    <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 15px;">
-                        <img src="img\home page\Home Page Product Logos\Route Maestro Logo.png" alt="RouteMaestro" style="width: 50px; height: 50px; border-radius: 50%;">
-                        <div>
-                            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #000;">RouteMaestro</h4>
-                            <p style="font-size: 1rem; color: #000;">An AI-Powered Travel CRM.</p>
-                        </div>
-                    </div>
-            
-                
-                    <div style="display: flex; flex-direction: column; gap: 20px;">
-                        <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 15px;">
-                            <img src="img\home page\Home Page Product Logos\Insurance Expert.png" alt="Insurance Experts" style="width: 50px; height: 50px; border-radius: 50%;">
-                            <div>
-                                <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #000;">Insurance Experts</h4>
-                                <p style="font-size: 1rem; color: #000;">Get instant & personalized online video assistance for your pets health!</p>
-                            </div>
-                        </div>
-                        <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 15px;">
-                            <img src="path-to-image3.jpg" alt="KinderConnect" style="width: 50px; height: 50px; border-radius: 50%;">
-                            <div>
-                                <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #000;">KinderConnect</h4>
-                                <p style="font-size: 1rem; color: #000;">Simplifying kindergarten management and communication.</p>
-                            </div>
-                        </div>
-                    </div>
-            
-            
-                    <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; gap: 15px;">
-                        <img src="img\home page\Home Page Product Logos\JusDoIt.png" alt="JustDoIt" style="width: 50px; height: 50px; border-radius: 50%;">
-                        <div>
-                            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #000;">JustDoIt</h4>
-                            <p style="font-size: 1rem; color: #000;">Simplify tasks and boost your employees productivity.</p>
-                        </div>
-                    </div>
-                </div>
-            </section> 
             <section class="section-cta" style="padding: 50px; background: linear-gradient(to bottom, #000000 0%, #0052CD 100%);">
                 <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px; flex-wrap: wrap;">
                     <div style="flex: 1; max-width: 50%; box-sizing: border-box;">
-                      <img src="img\home page\Home Page Product Logos\Foot Step.png" alt="Sample Image" style="max-width: 100%; height: auto; border-radius: 8px;">
+                      <img src="img\home page\Home Page Product Logos\Foot Step.png" alt="logo" style="max-width: 100%; height: auto; border-radius: 8px;">
                     </div>
                     <div style="flex: 1; max-width: 50%; box-sizing: border-box;">
                       <h2 style="font-size: 44px; margin-bottom: 20px;color: white;line-height: normal;">Ready To Take Next Step?</h2>
                       <p style="font-size: 28px; margin-bottom: 20px; color: white;">
                         Contact with our experts today! </p>
-                      <a href="contact-us.html" style="display: inline-block; padding: 5px 10px; background-color: white; color:#000000; text-decoration: none; border-radius: 25px; font-size: 16px; text-align: center;">
+                      <a href="contact-us.html" style="display: inline-block; padding: 10px 20px; background-color: white; color:#000000; text-decoration: none; border-radius: 25px; font-size: 16px; text-align: center;">
                         Get In Touch
                       </a>
                     </div>
@@ -2337,6 +2351,37 @@
 
     <!-- Theme Initialization Files -->
     <script src="js/theme.init.js"></script>
+    
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const imageBoxes = document.querySelectorAll(".image-box");
+    
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                // Remove the active class from all buttons
+                filterButtons.forEach((btn) => btn.classList.remove("active"));
+                // Add active class to the clicked button
+                button.classList.add("active");
+    
+                // Get the category of the clicked button
+                const category = button.getAttribute("data-category");
+    
+                // Show or hide images based on the selected category
+                imageBoxes.forEach((box) => {
+                    const boxCategories = box.getAttribute("data-category").split("|");
+                    if (boxCategories.includes(category)) {
+                        box.style.display = "block"; // Show the matching image
+                    } else {
+                        box.style.display = "none"; // Hide the non-matching images
+                    }
+                });
+            });
+        });
+    
+        // Trigger the first button's click event on page load (optional)
+        filterButtons[0].click();
+    </script>
+    
 
 </body>
 
