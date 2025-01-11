@@ -57,6 +57,38 @@
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const imageBoxesdiv = document.querySelectorAll(".image-box");
+        
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Remove the active class from all buttons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            // Add active class to the clicked button
+            button.classList.add("active");
+        
+            // Get the category of the clicked button
+            const category = button.getAttribute("data-category");
+        
+            // Highlight or fade images based on the category
+            imageBoxesdiv.forEach((box) => {
+              // Get the categories of the current image-box
+              const boxCategories = box.getAttribute("data-category").split("|");
+        
+              if (category === "all" || boxCategories.includes(category)) {
+                box.classList.add("highlight"); // Highlight the filtered images
+              } else {
+                box.classList.remove("highlight"); // Fade the non-filtered images
+              }
+            });
+          });
+        });
+        
+        // Trigger the "All" button on page load
+        document.querySelector(".filter-btn[data-category='all']").click();
+        </script>
+
     <!-- Email.js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
@@ -93,6 +125,75 @@
             background: #0052CD;
             border-radius: 10px;
         }
+
+        .filter-section {
+  text-align: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  /* background: linear-gradient(90deg, #9abff8, #b1e0f8); */
+  padding: 10px 5px;
+  /* width: 198px; */
+  margin: 1px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 5px;
+  border-bottom: 2px solid linear-gradient(90deg, #9abff8, #b1e0f8);
+  font-weight: 600;
+  font-size: 11px;
+  transition: background-color 0.3s ease;
+
+}
+
+
+.filter-btn.active {
+  background-color: #fff;
+  color: black;
+  border: 2px solid #005ce6;
+}
+
+.filter-btn:hover {
+  background-color: #fff;
+  color: black;
+  border-bottom: 2px solid #007bff;
+}
+
+.image-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-box {
+  width: 180px;
+  height: 97px;
+  overflow: hidden;
+  /* border-radius: 10px; */
+  background-color: #fff;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  opacity: 0.4; /* Default faded look */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-box img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.image-box.highlight {
+  opacity: 1; /* Highlighted look */
+  transform: scale(1.05); /* Slight zoom effect */
+}
     </style>
 
     <script src="js/demos/emailjs.js"></script>
@@ -1836,7 +1937,7 @@
                 </div>
             </section> -->
 
-            <section class="section-logos" style="margin-top: 75px;text-align: center;">
+            <section class="section-logos container" style="margin-top: 75px;text-align: center;">
 
                 <div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
                     <hr class="bg-primary border-radius m-auto">
@@ -2002,13 +2103,12 @@
             </div>
             </section>
 
-            <section class="section-products container" style="padding: 50px; background-color: #f9f9f9;">
-
+            <section class="section-products" style="padding: 50px; background-color: #f9f9f9;color: #000;">
+            <div class="container">
                 <div style="text-align: center; margin-bottom: 30px;">
                     <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 10px;">Transforming Ideas into Software Products</h2>
                     <p style="font-size: 1rem; color: #555;">Explore our innovative software products designed to optimize performance and drive business success.</p>
                 </div>
-            
         
                 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
     
@@ -2047,12 +2147,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </section> 
-            <section class="section-number-section container" style="padding: 50px; background-color: #f9f9f9;">
+            <section class="section-number-section container" style="padding: 50px; background-color: white;color: #000;">
 
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 10px;">Transforming Ideas into Software Products</h2>
-                    <p style="font-size: 1rem; color: #555;">Explore our innovative software products designed to optimize performance and drive business success.</p>
+                    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 10px;color: #000;">Our Numbers Define Us Who We Are</h2>
+                    <p style="font-size: 1rem; color: #000;">Our numbers tell the story of our dedication, expertise, unwavering pursuit of excellence, <br> and tells why we reaffirm our position as leaders in the industry.</p>
                 </div>
             
         
@@ -2100,7 +2201,7 @@
                       <img src="img\home page\Home Page Product Logos\Foot Step.png" alt="Sample Image" style="max-width: 100%; height: auto; border-radius: 8px;">
                     </div>
                     <div style="flex: 1; max-width: 50%; box-sizing: border-box;">
-                      <h2 style="font-size: 48px; margin-bottom: 20px;color: white;line-height: normal;">Ready To Take Next Step?</h2>
+                      <h2 style="font-size: 44px; margin-bottom: 20px;color: white;line-height: normal;">Ready To Take Next Step?</h2>
                       <p style="font-size: 28px; margin-bottom: 20px; color: white;">
                         Contact with our experts today! </p>
                       <a href="contact-us.html" style="display: inline-block; padding: 5px 10px; background-color: white; color:#000000; text-decoration: none; border-radius: 25px; font-size: 16px; text-align: center;">
