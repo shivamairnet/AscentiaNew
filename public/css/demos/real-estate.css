@@ -95,7 +95,7 @@ html, body{
 
 .real-estate-section-3 h2{
     color: white; 
-    font-size: 25px; 
+    font-size: 28px; 
     font-weight: bold; 
     letter-spacing: normal;
 }
@@ -355,7 +355,7 @@ html, body{
   
   .image-box {
     width: 180px;
-    height: 97px;
+    height: 50px;
     overflow: hidden;
     border-radius: 10px;
     background-color: #fff;
@@ -373,6 +373,131 @@ html, body{
   .image-box.highlight {
     opacity: 1; /* Highlighted look */
     transform: scale(1.05); /* Slight zoom effect */
+  }
+
+  .filter-section {
+    text-align: center;
+    width: 100%;
+    max-width: 1100px;
+  }
+  
+  .filter-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    /* background: linear-gradient(90deg, #9abff8, #b1e0f8); */
+    padding: 12px 8px;
+    /* width: 140px; */
+    margin: 1px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 8px;
+    border-bottom: 2px solid linear-gradient(90deg, #9abff8, #b1e0f8);
+    font-weight: 600;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  
+  .filter-btn.active {
+    background-color: #0052CD;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .filter-btn:hover {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #007bff;
+  }
+  
+  .image-container-logo {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .image-box {
+    width: 130px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #F8F8F8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* opacity: 0.4; */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .image-box img {
+    object-fit: contain;
+    width: 30%;
+    height: 100%;
+  }
+  
+  .image-box.highlight {
+    opacity: 1; /* Highlighted look */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+
+  .scroll-container {
+    display: flex;
+  }
+  
+  .leftDiv {
+    width: 50%;
+    color: white;
+    padding: 20px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 90px;
+    align-self: flex-start; /* Ensure it starts at the top */
+    /* height: 70vh; */
+    padding-bottom: 45px;
+  }
+  
+  .rightDiv {
+    width: 50%;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Makes the cards stack vertically */
+    gap: 15px; 
+    /* overflow-y: auto;  */
+    /* max-height: calc(80vh - 80px); */
+    scrollbar-width: none; /* For Firefox */
+  
+  }
+  
+  .rightDivChild::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+  
+  .rightDivChild{
+    overflow-y: auto; 
+    max-height: calc(80vh - 95px);
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 30px !important;
+    width: 345px;
+    height: 310px;
+    margin: auto;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+  }
+  
+  .section-scroll {
+    height: 80vh;
+    padding: 20px;
+    background-color: black;
   }
 
 @media (min-width: 330px) and (max-width: 370px){
@@ -521,13 +646,13 @@ html, body{
     }
 
     .real-estate-section-7-list li{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold; 
         text-decoration: underline;
         text-underline-offset: 2px;
         margin-bottom: 40px;
-        margin-top: 40px;
-        line-height: 35px;
+        margin-top: 20px;
+        line-height: 20px;
     }
 
     .mastering-library{
@@ -660,7 +785,7 @@ html, body{
   @media (min-width: 375px) and (max-width: 429px){
 
     .real-estate-section-7{
-        height: 1050px;
+        height: 800px;
     }
     .real-estate-section-6{
         height: 1000px;

@@ -88,74 +88,7 @@
             align-items: center;
             font-size: 22px;
         }
-        .filter-section {
-  text-align: center;
-  width: 100%;
-  max-width: 1100px;
-}
 
-.filter-buttons {
-  margin-bottom: 20px;
-}
-
-.filter-btn {
-  /* background: linear-gradient(90deg, #9abff8, #b1e0f8); */
-  padding: 12px 8px;
-  /* width: 140px; */
-  margin: 1px;
-  cursor: pointer;
-  background-color: #ffffff;
-  color: black;
-  border-radius: 8px;
-  border-bottom: 2px solid linear-gradient(90deg, #9abff8, #b1e0f8);
-  font-weight: 600;
-  font-size: 12px;
-  transition: background-color 0.3s ease;
-
-}
-
-
-.filter-btn.active {
-  background-color: #0052CD;
-  color: white;
-  border: 2px solid white;
-}
-
-.filter-btn:hover {
-  background-color: #fff;
-  color: black;
-  border: 2px solid #007bff;
-}
-
-.image-container-logo {
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.image-box {
-  width: 130px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* opacity: 0.4; */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.image-box img {
-  object-fit: contain;
-  width: 30%;
-  height: 100%;
-}
-
-.image-box.highlight {
-  opacity: 1; /* Highlighted look */
-  transform: scale(1.05); /* Slight zoom effect */
-}
     </style>
     <script src="js/demos/emailjs.js"></script>
     <style>
@@ -182,49 +115,7 @@
         }
 
 
-.scroll-container {
-  display: flex;
-}
 
-.leftDiv {
-  width: 40%;
-  color: white;
-  padding: 20px;
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
-  top: 100px;
-  align-self: flex-start; /* Ensure it starts at the top */
-  height: fit-content;
-}
-
-.rightDiv {
-  width: 60%;
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column; /* Makes the cards stack vertically */
-  gap: 10px; 
-  overflow-y: auto; /* Add vertical scrolling */
-  max-height: calc(90vh - 80px);
-
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 30px !important;
-  width: 345px;
-  height: 310px;
-  margin: auto;
-  padding: 15px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.section-scroll {
-  height: 90vh;
-  padding: 20px;
-  background-color: black;
-}
 
     </style>
 
@@ -565,7 +456,7 @@
 			</a>
 
             <section class="real-estate-section-1 d-block d-md-none">
-                <div>
+                <div style="background-image: url('img/real-estate/Real Estate (1).jpg');height: 700px;background-position: center;background-size: contain;background-repeat: no-repeat;">
                     <div class="row mx-2 my-3 text-center mb-3">
                         <div class="mt-1 text-center">
                             <h2 class="appear-animation mb-1 text-center text-dark font-weight-bold"
@@ -786,7 +677,7 @@
                         data-appear-animation-delay="400">Explore the functionality of our state-of-the-art real estate app development system, or if you want to <br> add some personalized features for your real estate business, don't worry, we'll do it for you</h4>
                 </div>
                 <div class="d-md-block d-none">
-                <div class="row" style="border: 5px solid rgba(0, 82, 205, 1); border-radius: 20px;margin: auto;width: 1150px;">
+                <div class="row" style="border: 5px solid rgba(0, 82, 205, 1); border-radius: 20px;margin: auto;width: 1000px;">
                     <div class="col-md-6 text-white pt-lg-5 list-QA appear-animation" style="background-color: black; color: rgba(0, 82, 205, 1)
                     ;  border-radius: 15px;" data-appear-animation="fadeInRightShorter"
                         data-appear-animation-delay="600">
@@ -1059,13 +950,14 @@
                         </h2>
                     <h4 class="appear-animation mx-1" data-appear-animation="fadeInRightShorter"
                         data-appear-animation-delay="400">Witness our step by step process in making our real estate management system.</h4>
-                        <img src="img\real-estate\Real Estate Icons-latest\Development Process.png" alt="" width="1150px" height="100px">
+                        <img class="d-md-block d-none" src="img\real-estate\Real Estate Icons-latest\Development Process.png" alt="" width="950px" height="100px" style="margin-top: 15px;margin: auto;">
+                        <img class="d-md-none" src="img\real-estate\development-process-mobile.png" alt="" width="40%" height="auto">
                     </div>
             </section>
 
             <div style="display: flex; justify-content: center; align-items: center; width: 100vw;margin-bottom: 25px;">
                 <section class="real-estate-section-3 mx-2"
-                         style="background-image: url('img/real-estate/Real Estate Images and Icons (1)/Real Estate Images and Icons/CTA.jpg'); border-radius: 30px !important; width: 1100px; display: flex;
+                         style="background-image: url('img/real-estate/Real Estate Images and Icons (1)/Real Estate Images and Icons/CTA.jpg'); border-radius: 30px !important; width: 1000px; display: flex;
                          justify-content: center; align-items: center;" aria-label="Image of a door and its keys hanging on the door knob.">
                     <div class="" style="margin: auto;">
                         <div class="row">
@@ -1091,42 +983,87 @@
             </div>
 
 
-                <section class="section-scroll">
-                <div class="scroll-container" style="padding-top: 40px;width: 1150px;margin: auto;">
+                <section class="section-scroll d-md-block d-none">
+                <div class="scroll-container" style="padding-top: 40px;width: 1000px;margin: auto;">
                   <div class="leftDiv">
-                    <h2 style="font-size: 40px;letter-spacing: 0.5px;">Admin Panel for Real Estate Management</h2>
-                    <p class="text-left text-3 text-white">01 -> 04</p>
-                    <p class="text-left text-4 text-white">Our adaptable admin panel provides essential real estate property management features tailored to your needs, including property listings, client management, performance metrics analysis, and more.</p>
-                    <a class="px-3 py-3" href="" style="background: #0052CD;border-radius: 25px !important;color: white;margin-bottom: 10px;">Get Free Consultation</a>  
+                    <h2 style="font-size: 40px;letter-spacing: 0.5px;margin-bottom: 35px;">Admin Panel for Real Estate Management</h2>
+                    <!-- <p class="text-left text-3 text-white">01 -> 04</p> -->
+                    <p class="text-left text-white" style="margin-bottom: 45px;font-size: 1.35rem;">Our adaptable admin panel provides essential real estate property management features tailored to your needs, including property listings, client management, performance metrics analysis, and more.</p>
+                    <a class="px-3 py-3" href="" style="background: #0052CD;border-radius: 25px !important;color: white;margin-bottom: 10px;margin-top: 30px !important;">Get Free Consultation</a>  
                 </div>
                   <div class="rightDiv">
-                    <div class="card">
+                    <div class="rightDivChild">
+                    <div class="card" style="border-radius: 25px !important;">
                         <!-- <div style="display: flex;flex-direction: column;align-items: center;padding-top: 10px;padding-bottom: 10px;text-align: left !important;"> -->
                         <img src="img\real-estate\Real Estate Icons-latest\Admin Panel - Property Management.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
                         <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;text-align: left !important;">Property Management System</h2>
                         <p style="color: #000;font-size: 0.95rem;">Administrators can efficiently manage listings, upload detailed property visuals, update statuses, and schedule viewings, ensuring accurate information and streamlined property management.</p>
                     <!-- </div> -->
                     </div>
-                      <div class="card">
+                      <div class="card" style="border-radius: 25px !important;">
                         <!-- <div style="display: flex;flex-direction: column;align-items: center;padding-top: 10px;padding-bottom: 10px;text-align: left !important;"> -->
                         <img src="img\real-estate\Real Estate Icons-latest\Admin Panel - Role Based Access.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
                         <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;">Role Based Access</h2>
                         <p style="color: #000;font-size: 0.95rem;">Administrators can define, manage and modify roles such as agents, property managers, and support staff, customizing access and functionalities to meet unique business needs.</p>
                       <!-- </div> -->
                       </div>
-                      <div class="card">
+                      <div class="card" style="border-radius: 25px !important;">
                         <img src="img\real-estate\Real Estate Icons-latest\Admin Panel - Client Management.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
                         <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;">Client Management</h2>
                         <p style="color: #000;font-size: 0.95rem;">Administrators can manage client profiles, track leads, and oversee the sales pipeline from inquiry to deal closure. Integrated communication tools enable seamless in-app messaging, email, and SMS notifications, ensuring efficient client interaction.</p>
                       </div>
-                      <div class="card">
+                      <div class="card" style="border-radius: 25px !important;">
                         <img src="img\real-estate\Real Estate Icons-latest\Admin Panel - Financial Management.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
                         <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;">Financial Management</h2>
                         <p style="color: #000;font-size: 0.95rem;">Administrators can generate financial reports and invoices for transparency and planning, track budgets and expenses, and send automated payment reminders.</p>
                       </div>
+                    </div>
                   </div>
                 </div>
               </section>
+
+              <section class="section-scroll d-block d-md-none" style="height: 1800px;margin-top: 25px;">
+                <div style="padding: 20px; width: 100%; margin: auto;">
+                  <div style="text-align: center; margin-bottom: 30px;">
+                    <h2 style="font-size: 28px; letter-spacing: 0.5px; margin-bottom: 20px; color: white;">Admin Panel for Real Estate Management</h2>
+                    <p style="color: white; font-size: 1.1rem; margin-bottom: 20px;">
+                      Our adaptable admin panel provides essential real estate property management features tailored to your needs, including property listings, client management, performance metrics analysis, and more.
+                    </p>
+                    <a href="#" style="background: #0052CD; border-radius: 25px; color: white; padding: 10px 20px; text-decoration: none;">Get Free Consultation</a>
+                  </div>
+                  <div>
+                    <div style="border: 1px solid #ddd; border-radius: 15px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                      <img src="img/real-estate/Real Estate Icons-latest/Admin Panel - Property Management.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
+                      <h2 style="color: white; font-size: 1.2rem; text-align: center;">Property Management System</h2>
+                      <p style="color: #fff; font-size: 1rem; text-align: center;">
+                        Administrators can efficiently manage listings, upload detailed property visuals, update statuses, and schedule viewings, ensuring accurate information and streamlined property management.
+                      </p>
+                    </div>
+                    <div style="border: 1px solid #ddd; border-radius: 15px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                      <img src="img/real-estate/Real Estate Icons-latest/Admin Panel - Role Based Access.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
+                      <h2 style="color: #fff; font-size: 1.2rem; text-align: center;">Role Based Access</h2>
+                      <p style="color: #fff; font-size: 1rem; text-align: center;">
+                        Administrators can define, manage and modify roles such as agents, property managers, and support staff, customizing access and functionalities to meet unique business needs.
+                      </p>
+                    </div>
+                    <div style="border: 1px solid #ddd; border-radius: 15px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                      <img src="img/real-estate/Real Estate Icons-latest/Admin Panel - Client Management.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
+                      <h2 style="color: #fff; font-size: 1.2rem; text-align: center;">Client Management</h2>
+                      <p style="color: #fff; font-size: 1rem; text-align: center;">
+                        Administrators can manage client profiles, track leads, and oversee the sales pipeline from inquiry to deal closure. Integrated communication tools enable seamless in-app messaging, email, and SMS notifications, ensuring efficient client interaction.
+                      </p>
+                    </div>
+                    <div style="border: 1px solid #ddd; border-radius: 15px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                      <img src="img/real-estate/Real Estate Icons-latest/Admin Panel - Financial Management.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
+                      <h2 style="color: #fff; font-size: 1.2rem; text-align: center;">Financial Management</h2>
+                      <p style="color: #fff; font-size: 1rem; text-align: center;">
+                        Administrators can generate financial reports and invoices for transparency and planning, track budgets and expenses, and send automated payment reminders.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
 
             <section class="section-logos container" style="margin-top: 75px;text-align: center;height: 500px;margin-bottom: 50px;">
                 <div class="overflow-hidden mb-1 mt-4">
@@ -1171,7 +1108,7 @@
                     </div>
                 </div>
 
-                <div class="image-container-logo" style="margin-top: 55px;padding: 0;margin: 0;">
+                <div class="image-container-logo" style="margin-top: 55px;padding: 0;display: flex;align-items: center;justify-content: center;">
                     <div data-category="mobile" class="image-box">
                         <img src="img\home page\Home Page Our Technology Stack Logos (2)\android.png" height="30px" width="30px"
                          alt=""><span style="color: #000;font-weight: bold;font-size: 16px;">Android</span>
@@ -1361,7 +1298,7 @@
             </section>
 
             <section class="real-estate-section-7 d-md-block d-none" style="background-image: url(img/travel/Vector.png);" aria-label="Image of a boy sitting in the cafe while working on the laptop and discussing over call">
-                <div style="width: 1100px;margin: auto;">
+                <div style="width: 1000px;margin: auto;">
                     <div class="row mt-5" >
                         <h2 class="appear-animation pe-5" data-appear-animation="fadeInRightShorter"
                             data-appear-animation-delay="100">Lead The Future Of Real Estate With Ascentia Labs</h2>
@@ -1405,53 +1342,80 @@
                     </div>
                 </div>
             </section>
-            <section class="real-estate-section-7 d-block d-md-none" style="background-image: url(img/travel/section7mobile.png); background-position: right;" aria-label="Image of a boy sitting in the cafe while working on the laptop and discussing over call">
-                <div>
-                    <div class="row mt-5">
-                        <h2 class="appear-animation pe-5" data-appear-animation="fadeInRightShorter"
-                            data-appear-animation-delay="200">Lead The Future Of Real Estate With Ascentia Labs: Where Innovation Drives Efficiency & Compassion Guides Every Operation</h2>
-                        <h4 class="appear-animation" data-appear-animation="fadeInRightShorter"
-                            data-appear-animation-delay="400">Here's Why You Can't Afford to Miss Us Out!</h4>
-                        <ul class="real-estate-section-7-list justify-content-start">
-                            <li class="text-white appear-animation" data-appear-animation="fadeInRightShorter"
-                                data-appear-animation-delay="500"><span style="color: rgba(54, 122, 255, 1);
-                                font-size:32px">01</span>
-                                Well
-                                Experienced Team</li>
-                            <li class="text-white appear-animation" data-appear-animation="fadeInRightShorter"
-                                data-appear-animation-delay="600"><span
-                                    style="color: rgba(54, 122, 255, 1); font-size:32px">02</span>
-                                Customization
-                                & Flexibility
-                            </li>
-                            <li class="text-white appear-animation" data-appear-animation="fadeInRightShorter"
-                                data-appear-animation-delay="700"><span
-                                    style="color: rgba(54, 122, 255, 1); font-size:32px">03</span>
-                                Innovative
-                                Solutions</li>
-                            <li class="text-white appear-animation" data-appear-animation="fadeInRightShorter"
-                                data-appear-animation-delay="800"><span
-                                    style="color: rgba(54, 122, 255, 1); font-size:32px">04</span>
-                                Quality
-                                Assurance &
-                                Reliability</li>
-                            <li class="text-white appear-animation" data-appear-animation="fadeInRightShorter"
-                                data-appear-animation-delay="900"><span
-                                    style="color: rgba(54, 122, 255, 1); font-size:32px">05</span>
-                                Timely
-                                Delivery & Project
-                                Management</li>
-                            <li class="text-white appear-animation" data-appear-animation="fadeInRightShorter"
-                                data-appear-animation-delay="1000"><span
-                                    style="color: rgba(54, 122, 255, 1); font-size:32px">06</span>
-                                Competitive
-                                Pricing</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+            <section class="real-estate-section-7 d-block d-md-none" 
+         style="background-image: url(img/travel/section7mobile.png); 
+                background-position: right; 
+                padding: 20px;" 
+         aria-label="Image of a boy sitting in the cafe while working on the laptop and discussing over call">
+  <div>
+    <div class="row mt-5">
+      <!-- Centering the h2 -->
+      <h2 class="appear-animation text-center" 
+          data-appear-animation="fadeInRightShorter"
+          data-appear-animation-delay="200" 
+          style="font-size: 24px; margin-bottom: 20px; color: white;">
+        Lead The Future Of Real Estate With Ascentia Labs: Where Innovation Drives Efficiency & Compassion Guides Every Operation
+      </h2>
+      
+      <!-- Centering the h4 -->
+      <h4 class="appear-animation text-center" 
+          data-appear-animation="fadeInRightShorter"
+          data-appear-animation-delay="400" 
+          style="font-size: 18px; margin-bottom: 20px; color: white;">
+        Here's Why You Can't Afford to Miss Us Out!
+      </h4>
+      
+      <!-- Left-aligned pointers -->
+      <ul class="real-estate-section-7-list" style="padding-left: 10px;">
+        <li class="text-white appear-animation" 
+            data-appear-animation="fadeInRightShorter"
+            data-appear-animation-delay="500" 
+            style="margin-bottom: 10px; font-size: 16px;">
+          <span style="color: rgba(54, 122, 255, 1); font-size: 24px; margin-right: 10px;">01</span>
+          Well Experienced Team
+        </li>
+        <li class="text-white appear-animation" 
+            data-appear-animation="fadeInRightShorter"
+            data-appear-animation-delay="600" 
+            style="margin-bottom: 10px; font-size: 16px;">
+          <span style="color: rgba(54, 122, 255, 1); font-size: 24px; margin-right: 10px;">02</span>
+          Customization & Flexibility
+        </li>
+        <li class="text-white appear-animation" 
+            data-appear-animation="fadeInRightShorter"
+            data-appear-animation-delay="700" 
+            style="margin-bottom: 10px; font-size: 16px;">
+          <span style="color: rgba(54, 122, 255, 1); font-size: 24px; margin-right: 10px;">03</span>
+          Innovative Solutions
+        </li>
+        <li class="text-white appear-animation" 
+            data-appear-animation="fadeInRightShorter"
+            data-appear-animation-delay="800" 
+            style="margin-bottom: 10px; font-size: 16px;">
+          <span style="color: rgba(54, 122, 255, 1); font-size: 24px; margin-right: 10px;">04</span>
+          Quality Assurance & Reliability
+        </li>
+        <li class="text-white appear-animation" 
+            data-appear-animation="fadeInRightShorter"
+            data-appear-animation-delay="900" 
+            style="margin-bottom: 10px; font-size: 16px;">
+          <span style="color: rgba(54, 122, 255, 1); font-size: 24px; margin-right: 10px;">05</span>
+          Timely Delivery & Project Management
+        </li>
+        <li class="text-white appear-animation" 
+            data-appear-animation="fadeInRightShorter"
+            data-appear-animation-delay="1000" 
+            style="margin-bottom: 10px; font-size: 16px;">
+          <span style="color: rgba(54, 122, 255, 1); font-size: 24px; margin-right: 10px;">06</span>
+          Competitive Pricing
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-            <section class="real-estate-section-8 pt-5 pb-5" style="width: 1100px;margin: auto;">
+
+            <section class="real-estate-section-8 pt-5 pb-5" style="width: 1000px;margin: auto;">
                 <div class="container text-center">
                     <h2 class="pt-5 appear-animation" data-appear-animation="fadeInRightShorter"
                         data-appear-animation-delay="200">Frequently Asked Questions</h2>
@@ -1460,13 +1424,13 @@
                     <div class="accordion-item appear-animation" data-appear-animation="fadeInRightShorter"
                         data-appear-animation-delay="300">
                         <h2 class="accordion-header" style="text-align: center;">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
                                 style="font-weight: bold;">
                                 What features does a real estate system must include?
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show"
+                        <div id="collapseOne" class="accordion-collapse collapse"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body" style="text-align: left;">
                                 A robust real estate management system should feature detailed property listings, advanced client management tools, secure payment processing, cross-device compatibility, and powerful analytics for market insights. With these key features, real estate software simplifies property management, enhances customer relationships, streamlines operations, and delivers actionable data for real estate brokers, agencies, and property owners. This comprehensive solution is essential for improving efficiency, driving growth, and staying competitive in the dynamic real estate industry.
@@ -1524,7 +1488,7 @@
             </section>
 
             <section class="real-estate-section-9 mt-5 mb-5"
-                style="background-image: url(img/real-estate/section-9.png);width: 1100px;margin: auto;height: 350px;border-radius: 30px;" aria-label="Image of a man standing between the huge real estate buildings">
+                style="background-image: url(img/real-estate/section-9.png);width: 1000px;margin: auto;height: 350px;border-radius: 30px;" aria-label="Image of a man standing between the huge real estate buildings">
                 <div class="container container-xl-custom py-5">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-md-10 text-center">
@@ -1646,7 +1610,7 @@
                     <div class="row py-4 mt-2">
                         <div class="col-lg-12 text-center  mb-3 mb-lg-0">
                             <a href="/">
-                                <img alt="ascentialabs" width="235" height="65" src="img/ascentialabslogowhite1.png">
+                                <img alt="ascentialabs" width="250" height="35" src="img\real-estate\Ascentia Logo (2) (1).png">
                             </a>
                         </div>
                         <!-- <div class="col-lg-6 text-center text-lg-end">
