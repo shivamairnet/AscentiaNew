@@ -5,7 +5,7 @@ html, body{
 }
 
 .real-estate-section-1{
-    height: 550px;
+    height: 500px;
     width: 100%;
     background-size: cover; 
     background-repeat: no-repeat, no-repeat;
@@ -32,14 +32,10 @@ html, body{
     letter-spacing: 0.5px;
 }
 
-.real-estate-section-2{
-    /* height: 850px; */
-    margin-bottom: 20px;
-}
 
 .real-estate-section-2 h2{
     color: black; 
-    font-size: 37px; 
+    font-size: 40px; 
     font-weight: bold; 
     line-height: 1.2;
 }
@@ -57,7 +53,7 @@ html, body{
 }
 
  .list-QA li{ 
-    font-size: 21px;
+    font-size: 20px;
     list-style: none;
     padding: 20px;
     line-height: 1.2;
@@ -85,7 +81,7 @@ html, body{
 }
 
 .real-estate-section-3{
-    height: 350px;
+    height: 300px;
     /* width: 99.7%; */
     background-size: cover; 
     background-repeat: no-repeat, no-repeat;
@@ -101,7 +97,6 @@ html, body{
     color: white; 
     font-size: 25px; 
     font-weight: bold; 
-    line-height: 45px;
     letter-spacing: normal;
 }
 
@@ -288,7 +283,7 @@ html, body{
 }
 
 .real-estate-section-9{
-    height: 600px;
+    height: 500px;
    width: 100%;
    background-size: cover;
    background-repeat: no-repeat, no-repeat;
@@ -301,7 +296,7 @@ html, body{
 .real-estate-section-9 h2{
     color: white;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1.2;
 }
 
@@ -716,5 +711,92 @@ html, body{
     } */
 }
 
+@media screen and (max-width: 768px) {
+    .real-estate-section-9,.real-estate-section-8 {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+        width: 90% !important; /* Ensure the section takes the full width */
+        margin: auto;
+    }
+    .real-estate-section-9 h2 {
+        font-size: 1.4rem; /* Adjust heading size for better readability */
+    }
+    .accordion {
+        padding: 0 10px; /* Add smaller padding for the accordion container */
+    }
+    .accordion-header {
+        font-size: 1rem; /* Reduce font size for the accordion headers */
+    }
+    .accordion-button {
+        font-size: 0.9rem; /* Make accordion button text smaller */
+        padding: 10px; /* Add spacing for better touch targets */
+        line-height: normal !important;
+    }
+    .accordion-body {
+        font-size: 0.85rem; /* Adjust content text size */
+        text-align: justify; /* Improve readability by justifying text */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .real-estate-section-9,.real-estate-section-8 {
+        padding: 40px 20px; /* Increase padding slightly for tablets */
+        width: 100% !important; /* Ensure the section adjusts smoothly */
+    }
+    .real-estate-section-9 h2 {
+        font-size: 1.6rem; /* Slightly larger heading for tablets */
+        line-height: normal;
+    }
+    .accordion {
+        padding: 0 15px; /* Moderate padding for accordion container */
+    }
+    .accordion-header {
+        font-size: 1.1rem; /* Adjust font size for readability */
+    }
+    .accordion-button {
+        font-size: 1rem; /* Slightly larger button text for tablets */
+        padding: 12px; /* Improve touch target size */
+        line-height: normal !important;
+    }
+    .accordion-body {
+        font-size: 0.95rem; /* Slightly larger text for tablets */
+        text-align: justify; /* Keep text justified */
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 599px) {
+    .section-logos{
+        height: 900px !important;
+        margin-bottom: 15px;
+    }
 
 
+    .section-logos h2 {
+        font-size: 24px;
+    }
+
+    .section-logos p {
+        font-size: 14px;
+    }
+
+    .filter-section .filter-buttons {
+        gap: 5px;
+    }
+
+    .filter-section .filter-btn {
+        font-size: 12px;
+        padding: 6px 8px;
+        margin-bottom: 5px;
+    }
+
+    .filter-section .filter-btn img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .image-container-logo {
+        grid-template-columns: repeat(2, 1fr) !important; /* Two logos per row */
+        gap: 10px;
+    }
+   
+}
