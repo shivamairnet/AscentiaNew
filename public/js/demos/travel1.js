@@ -68,7 +68,7 @@ function selectListItem(listItem) {
   
   function two() {
     $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Inventory Management.png");
-    $("#paragraph").html("<ul> <li> Extensive Inventory Access: GDS and third-party API integration provide real-time access to flights, hotels, transfers, tours, activities, and local destinations.</li><li>Diverse Supplier Connectivity: Connect with a wide range of inventory suppliers, enabling travel agencies to offer tailored options to customers. </li><li>Enhanced Efficiency: Automated data transfer between GDS, APIs, and agents streamlines operations, expanding travel options for businesses and customers.</li></ul>");
+    $("#paragraph").html("<ul> <li>Extensive Inventory Access: GDS and third-party API integration provide real-time access to flights, hotels, transfers, tours, activities, and local destinations.</li><li>Diverse Supplier Connectivity: Connect with a wide range of inventory suppliers, enabling travel agencies to offer tailored options to customers. </li><li>Enhanced Efficiency: Automated data transfer between GDS, APIs, and agents streamlines operations, expanding travel options for businesses and customers.</li></ul>");
   }
   
   function three() {
@@ -78,17 +78,17 @@ function selectListItem(listItem) {
   
   function four() {
     $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Fleet Logistics Fuel Management.png");
-    $("#paragraph").html("<ul> <li>AIDC for Fleet Vehicles: Assign AIDC codes to fleet vehicles for real-time tracking and order association.</li><li>Route Optimization: Plan and optimize delivery routes to minimize fuel consumption and reduce driving time.</li><li>ELD Compliance: Use Electronic Logging Devices (ELDs) to track driver hours and ensure compliance with Hours of Service (HOS) regulations, reducing risks of fines.</li></ul>");
+    $("#paragraph").html("<ul> <li>Real-Time Travel Package Generator: Travel tech companies can create personalized travel packages for clients using our CRM.</li><li>Customizable Packages: Whether travelers are looking for adventure, leisure, or privacy, our CRM integrates itineraries with suppliers (flights, hotels, sightseeing, activities, transfers) to tailor packages based on client preferences, requirements, and budget, offering the best travel deals.</li></ul>");
   }
   
   function five() {
     $("#beyond-bookshell-img").attr("src", "img/real-estate/Real Estate Icons-latest/Feature - Booking & Scheduling.png");
-    $("#paragraph").html("<ul> <li>Real-Time Fuel Monitoring: Monitor fleet fuel consumption and vehicle utilization in real time.</li><li>Fuel Price Optimization: Adjust shipping routes based on real-time fuel prices for optimal efficiency.</li><li>Theft Detection: Detects and deter fuel theft with advanced monitoring and alert systems.</li><li>Mobile Access: Access fleet fuel management features and data on-the-go via mobile devices.</li></ul>");
+    $("#paragraph").html("<ul> <li>AI-Powered Customer Support: Our CRM offers personalized post-booking support, tailored to each client's specific travel package.</li><li>24/7 AI Chatbot Assistance: Travel AI chatbots handle customer queries efficiently, providing fast and accurate responses to a wide range of questions, available round-the-clock.</li></ul>");
   }
   
   function six() {
     $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Vehicle Health Management.png");
-    $("#paragraph").html("<ul> <li>Real-Time Performance Monitoring: Access real-time metrics like tyre pressure, oil pressure, coolant levels, and engine temperature to identify issues early.</li><li>Efficiency Optimization: Analyze vehicle usage patterns to reduce idle time and maximize productivity. </li><li>Compliance Tracking: Oversee vehicle compliance with emissions and safety standards to avoid penalties and reduce overhead costs.</li></ul>");
+    $("#paragraph").html("<ul> <li>Advanced Traveler Information Mobile App: Our CRM connects customers with travel tech companies seamlessly, providing an all-in-one solution.</li><li>Comprehensive Features: Customers receive updates on travel packages, flight and hotel deals, payment information, itinerary queries, and more, enhancing their overall travel experience. </li><li></ul>");
   }
   
   // function seven() {
@@ -98,29 +98,35 @@ function selectListItem(listItem) {
   
   function seven() {
     $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Agency and Warehouse.png");
-    $("#paragraph").html("<ul> <li>Centralized Network Management: Efficiently manage multiple agencies and warehouses, ensuring smooth coordination across the logistics network.</li><li>Batch & Lot Tracking: Track inventory by batch or lot numbers for enhanced traceability and regulatory compliance.</li><li>Automation Integration: Implement automation technologies like barcode scanning, RFID, and AS/RS to boost efficiency and accuracy in warehouse operations.</li></ul>");
+    $("#paragraph").html("<ul> <li>Travel Management Module: Administrators can efficiently manage bookings, reservations, and customer itineraries.</li><li>Lead & Complaint Management: Proactively handle daily customer inquiries, ensuring timely responses.</li><li>Sales & Marketing Tools: Automate lead generation, CRM, and target marketing campaigns to enhance business growth.</li><li>Real-Time Updates & Notifications: Keep customers informed about travel queries with instant updates and notifications.</li></ul>");
   }
   
   
   function eight() {
     $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Digital Lock Solution.png");
-    $("#paragraph").html("<ul> <li>Secure Access Control: Keyless entry, biometric authentication, or digital key access ensures only authorized personnel can access goods and facilities.</li><li>Audit Trail: Maintain a detailed record of access events, including timestamps and user identities, for enhanced security and accountability.</li><li>Real-Time Monitoring: Receive immediate alerts for unauthorized access attempts or security breaches, ensuring prompt responses to potential threats.</li></ul>");
+    $("#paragraph").html("<ul> <li>Hassle-Free Online Payment: Our CRM offers a global, secure payment solution, eliminating demographic restrictions on payment collections.</li><li>E-Link for Easy Bookings: Automatically generates an E-Link for customers to easily click and book their preferred travel package.</li><li>Secure & Fast Payments: Customers can securely book travel deals, from flights and hotel packages to activities, enhancing the overall booking experience worldwide.</li></ul>");
   }
   
   function nine() {
     $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Expense Management.png");
-    $("#paragraph").html("<ul> <li>Track Logistics Expenses: Monitor transportation, fuel, and labor costs to calculate overall profit in the shipping process.</li><li>Multi-Currency Support: Accurately convert and report expenses in various currencies for international operations.</li><li>Audit Trail: Maintain a detailed record of expense transactions, including approvals, modifications, and adjustments, ensuring compliance and audit readiness.</li></ul>");
+    $("#paragraph").html("<ul> <li>Seamless Communication: Our platform ensures easy communication for travelers to update plans or get support before and after bookings.</li><li>Instant Messaging: Features like integrated WhatsApp and E-Link communication allow real-time chat with customer support for quick issue resolution.</li><li>Automatic Notifications: Travelers receive instant updates on important changes like flight delays or itinerary modifications, minimizing disruption and boosting satisfaction.</li></ul>");
   }
   
   function ten() {
     $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Driver Behavior Management.png");
-    $("#paragraph").html("<ul> <li>Real-Time Location Tracking: Know the exact location of vehicles to ensure drivers follow assigned routes and schedules.</li><li>Driver Behavior Monitoring: Track vehicle speed, harsh braking, and driver fatigue to identify improvement areas and provide targeted coaching.</li><li>Instant Alerts: Alert drivers about speed limit violations, seat belt use, or unusual driving behavior for better safety and compliance.</li></ul>");
+    $("#paragraph").html("<ul> <li>Automated Lead Allocation: Our system assigns leads to the most suitable sales representatives in real-time based on customer demographics, preferences, and past interactions.</li><li>Lead Optimization: Ensures each lead is directed to the best-equipped representative, increasing conversion chances.</li><li>Performance Insights: Provides lead distribution patterns and performance metrics to help travel tech companies refine strategies and boost sales team productivity.</li></ul>");
   }
   
   function eleven() {
     $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Customer Support.png");
-    $("#paragraph").html("<ul> <li>Multi-Channel Query Logging: Customers can log queries via Email, WhatsApp, AI Chatbot, or Calls.</li><li>Automated Order Updates: Customers receive automated status updates on Dispatch, Transit, and Delivery.</li><li>Seamless Communication: Internal teams and customers can communicate effectively, ensuring all critical information is available and actionable.</li></ul>");
+    $("#paragraph").html("<ul> <li> Automated Invoice Generation: Eliminate manual data entry and reduce human error by generating accurate and timely invoices automatically.</li><li>Seamless Integration: Invoices are automatically created and adjusted based on booking information, pricing structures, and customer preferences.</li><li>Automated Delivery & Notifications: Invoices are sent via email or other channels, and customers receive automated notifications about pending balances, saving time and resources for both travel tech companies and customers.</li></ul>");
   }
+
+  function twelve() {
+    $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Customer Support.png");
+    $("#paragraph").html("<ul> <li> Customizable Reporting: Administrators can create tailored reports and analyze key performance metrics from sales, reservations, customer relations, and financial transactions.</li><li>Intuitive Dashboards: Visualizations make it easy to track market trends, identify patterns, and monitor KPIs in real-time for optimization.</li><li>Advanced Analytics: Predict market trends and make data-driven decisions, helping travel tech companies adjust strategies for future growth.</li></ul>");
+  }
+  
   
   
   
