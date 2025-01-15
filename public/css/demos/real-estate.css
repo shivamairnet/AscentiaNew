@@ -98,6 +98,10 @@ html, body{
     font-size: 28px; 
     font-weight: bold; 
     letter-spacing: normal;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: normal;
+    margin-top: 25px;
 }
 
 .real-estate-section-3 h4{

@@ -163,6 +163,42 @@
   opacity: 1; /* Highlighted look */
   transform: scale(1.05); /* Slight zoom effect */
 }
+
+@media (max-width: 768px) {
+    .section-cta .container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center align text */
+        padding: 0 !important; /* Remove padding */
+        margin: 0 !important; /* Remove margin */
+    }
+
+    .section-cta .container > div {
+        max-width: 100%; /* Allow full width for children */
+        flex: none; /* Remove flex shrinking/growing */
+    }
+
+    .section-cta img {
+        margin: 0 0 20px 0; /* Remove top and sides margin, keep bottom spacing */
+    }
+
+    .section-cta h2 {
+        font-size: 32px; /* Adjust heading size for mobile */
+        margin: 0; /* Remove margins */
+    }
+
+    .section-cta p {
+        font-size: 18px; /* Adjust paragraph size for mobile */
+        margin: 0 0 20px 0; /* Remove top and sides margin, keep bottom spacing */
+    }
+
+    .section-cta a {
+        font-size: 14px; /* Adjust button font size for mobile */
+        margin: 0; /* Remove margin */
+    }
+}
+
+
     </style>
 
     <script src="js/demos/emailjs.js"></script>
@@ -1906,10 +1942,10 @@
                 </div>
             </section> -->
 
-            <section class="section-logos container" style="margin-top: 75px;text-align: center;height: 450px;">
+            <section class="section-logos container" style="margin-top: 75px;text-align: center;height: 500px;margin-bottom: 50px;">
                 <div class="overflow-hidden mb-1 mt-4">
-                    <h2 class="font-weight-bold text-color-dark positive-ls-3 line-height-2 line-height-sm-7 mb-0" style="font-size:40px;letter-spacing: 0.5px !important;">Our Technology Stack</h2>
-                    <p class="text-color-dark" style="font-size: 20px;" style="font-size: 20px;">We leverage cutting-edge technologies to craft exceptional digital experiences.</p>
+                    <h2 class="font-weight-bold text-color-dark positive-ls-3 mb-0" style="font-size: 40px;letter-spacing: 0.5px !important;line-height: normal;">Advanced Technology Stack for Real Estate Software and App Development</h2>
+                    <p class="mt-3" style="font-size: 20px;line-height: normal;color: #000;">We leverage cutting-edge technologies to craft exceptional digital experiences.</p>
                 </div>
 
                 <div class="filter-section text-center mt-5">
@@ -1948,6 +1984,194 @@
                         </button>
                     </div>
                 </div>
+
+                <div class="image-container-logo" style="margin-top: 55px;padding: 0;display: flex;align-items: center;justify-content: center;">
+                    <div data-category="mobile" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\android.png" height="30px" width="30px"
+                         alt=""><span style="color: #000;font-weight: bold;font-size: 16px;">Android</span>
+                    </div>
+                    <div data-category="frontend" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Angular.png" alt="" height="20px" width="20px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Angular</span>
+                    </div>
+                    <div data-category="switches|storage-and-servers" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\apache nifi.png" alt="" height="30px" width="30px" 
+                        > <span style="color: #000;font-weight: bold;font-size: 16px;">Apache</span>
+                    </div>
+                    <div data-category="cloud-db" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\aws.png" alt="" height="30px" width="30px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Aws</span>
+                    </div>
+                    <div data-category="designing" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\blender.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Blender</span>
+                    </div>
+                    <div data-category="frontend" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\bootstrap.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Bootstrap</span>
+                    </div>
+                    <div data-category="ai" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\calude ai.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Claude AI </span>
+                    </div>
+                    <div data-category="databases" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Cassandra.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Cassandra </span>
+                    </div>
+                    <div data-category="frontend" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\CSS.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">CSS </span>
+                    </div>
+                    <div data-category="frontend" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Ember.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Ember</span>
+                    </div>
+                    <div data-category="designing" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\figma.png" alt="" height="40px" width="50px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Figma</span>
+                    </div>
+                    <div data-category="digital-signage" class="image-box" style="color: #000;">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Firebase.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Firebase</span>
+                    </div>
+                    <div data-category="mobile" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\flutter.png" alt="" height="40px" width="50px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Flutter</span>
+                    </div>
+                    <div data-category="designing" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Framer logo.png" alt="" height="40px" width="50px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Framer</span>
+
+                    </div>
+                    <div data-category="ai" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\gamma ai.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Gamma Ai</span>
+                    </div>
+                    <div data-category="ai" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\gemini logo.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Gemini Ai</span>
+                    </div>
+                    <div data-category="backend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\go.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Go</span>
+                    </div>
+                    <div data-category="data-analytics" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\google analytics.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Google Analytics</span>
+                    </div>
+                    <div data-category="cloud-db" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\google cloud.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Google Cloud</span>
+                    </div>
+                    <div data-category="frontend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\HTML 5.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">HTML 5</span>
+                    </div>
+                    <div data-category="mobile" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\ios.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">IOS</span>
+                    </div>
+                    <div data-category="frontend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Java Script.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Javascript</span>
+                    </div>
+                    <div data-category="backend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Java.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Java</span>
+                    </div>
+                    <div data-category="mobile" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\kotlin.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Kotlin</span>
+                    </div>
+                    <div data-category="cloud-db" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\microsoft azure.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Microsoft Azure</span>
+                    </div>
+                    <div data-category="databases" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\mongo db.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Mongo Db</span>
+                    </div>
+                    <div data-category="databases" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\mysql.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Mysql</span>
+                    </div>
+                    <div data-category="backend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\net.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Net</span>
+                    </div>
+                    <div data-category="backend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\node js.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Node Js</span>
+                    </div>
+                    <div data-category="backend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\next js.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Next Js</span>
+                    </div>
+                    <div data-category="ai" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\open ai logo.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Open Ai</span>
+                    </div>
+                    <div data-category="cloud-db" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\oracle cloud.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Oracle Cloud</span>
+                    </div>
+                    <div data-category="wireless" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\oracle logo.png" alt="" height="50px" width="60px">Oracle
+                    </div>
+                    <div data-category="designing" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\photoshop logo.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Photoscope</span>
+                    </div>
+                    <div data-category="backend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\php.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Php</span>
+                    </div>
+                    <div data-category="data-analytics" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\power bi.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Power Bi</span>
+                    </div>
+                    <div data-category="backend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\python.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Python</span>
+                    </div>
+                    <div data-category="data-analytics" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\pytorch.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Pytorch</span>
+                    </div>
+                    <div data-category="frontend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\React.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">React</span>
+                    </div>
+                    <div data-category="cloud-db" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\salesforce.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Salesforce</span>
+                    </div>
+                    <div data-category="designing" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\sketchup.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Sketchup</span>
+                    </div>
+                    <div data-category="mobile" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\swift.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Swift</span>
+                    </div>
+                    <div data-category="frontend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\tailwind css.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Tailwind</span>
+                    </div>
+                    <div data-category="data-analytics" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\tensor flow.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Tensor Flow</span>
+                    </div>
+                    <div data-category="frontend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\typescript.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Typescript</span>
+                    </div>
+                    <div data-category="frontend" class="image-box">
+                        <img src="img\home page\Home Page Our Technology Stack Logos (2)\Vue Js.png" alt="" height="50px" width="60px">
+                        <span style="color: #000;font-weight: bold;font-size: 16px;">Vue Js</span>
+                    </div>
+                </div>
+            
             </section>
 
             <section class="section-products" style="padding: 50px; background-color: #f9f9f9;color: #000;">

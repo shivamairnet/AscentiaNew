@@ -56,7 +56,7 @@ function selectListItem(listItem) {
 
 function digitizedAdmission() {
     $("#beyond-bookshell-img").attr("src", "img/education/writing (1) 1.png");
-    $("#paragraph").html("<ul><li>From <strong>Initial Enquiry</strong> & <strong>Appointment Booking</strong> to <strong>Final Registration,</strong> our platform streamlines academic institution admission process.</li> <li>Admission staff can easily <strong>Submit, Track,</strong> & <strong>Upload</strong> student documents.</li><li> Our system also facilitates online payment of different student finances structures like  <strong>Prospectus Fees, Application Fees, Admission Fees</strong> & even more.</li></ul>");
+    $("#paragraph").html("<ul><li>Streamline the academic admission process with our platform, from initial inquiry and appointment booking to final registration.</li> <li>Admission staff can easily manage student documents and track applications, while students benefit from secure online payment options for fees like prospectus, application, and admission.</li><li> Optimize efficiency and simplify your admissions process with our user-friendly system.</li></ul>");
 }
 
 function mobileApp() {

@@ -1,135 +1,113 @@
-document.addEventListener("mousemove", function (e) {
-  var followMouse = document.getElementById("followMouse");
-  followMouse.style.top = e.clientY + "px";
-  followMouse.style.left = e.clientX + "px";
-});
 
 function selectListItem(listItem) {
-  $("#list-container li").css("color", "white");
-  $(listItem).css("color", "#0052CD");
+  $('#list-container li').css('color', 'white');
+  $(listItem).css('color', '#0052CD');
 
   var index = $(listItem).index();
   switch (index) {
-    case 0:
-      orderManagement();
-      break;
-    case 1:
-      inventoryManagementSolutions();
-      break;
-    case 2:
-      shippingManagementSystem();
-      break;
-    case 3:
-      fleetManagementSolutions();
-      break;
-    case 4:
-      fleetFuelManagementSolutions();
-      break;
-    case 5:
-      vehicleHealthManagement();
-      break;
-    case 6:
-      WarehouseManagement();
-      break;
-    case 7:
-      digitalLockSolutions();
-      break;
-    case 8:
-      expenseManagementSystem();
-      break;
-    case 9:
-      driverBehaviorMonitoring();
-      break;
-    case 10:
-      customerSupport();
-      break;
-    default:
-      break;
+      case 0:
+          one();
+          break;
+      case 1:
+          two();
+          break;
+      case 2:
+          three();
+          break;
+      case 3:
+          four();
+          break;
+      case 4:
+          five();
+          break;
+      case 5:
+          six();
+          break;
+      case 6:
+          seven();
+          break;
+      case 7:
+          eight();
+          break;
+      case 8:
+          nine();
+          break;
+          case 9:
+          ten();
+          break;
+          case 10:
+          eleven();
+          break;
+     
+      default:
+          break;
   }
 }
 
-function orderManagement() {
-  $("#beyond-bookshell-img").attr("src", "img/logistics/order (1) 1.png");
-  $("#paragraph").html(
-    "<ul><li>From <strong>Initial Order</strong> to <strong>Final Order Delivery,</strong> our logistics order management system ensures <strong>Smooth Processing, Accurate Order Distribution </strong> and <strong>Effective Communication</strong> with your customers.</li><li>With <strong>Digital Order Processing System,</strong> logistics businesses can create an <strong>Digital Receipt</strong> with a QR code printed on it, making it easy for businesses and customers to get the order shipment details.</li><li>Additionally, our logistics order management system can manage <strong>Back Orders</strong> and can even facilitate <strong>Orders Return Processing</strong> with in-depth data for logistics business analysis and reporting.</li></ul>"
-  );
+function one() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Logistics Order Management.png");
+  $("#paragraph").html("<ul><li>Order Processing & Distribution: Smooth processing and accurate order distribution from initial order to final delivery.</li><li>Digital Order Tracking: Digital order processing system creates digital receipts with QR codes for easy shipment tracking. </li><li>Back Order Management: Manage backorders and facilitate order return processing. </li><li>Business Analytics & Reporting: In-depth data for logistics business analysis and reporting.</li> </ul>");
 }
 
-function inventoryManagementSolutions() {
-  $("#beyond-bookshell-img").attr(
-    "src",
-    "img/logistics/stock-keeping-unit 1.png"
-  );
-  $("#paragraph").html(
-    "<ul><li>With our inventory management, each order can be tagged with a <strong>Automatic Identification and Data Capture (AIDC)</strong> code, providing <strong>Unique Identification</strong> for every logistics inventory item. Moreover with this Automatic Identification and Data Capture (AIDC) code logistics businesses can streamlines their inventory tasks like <strong>Order Receiving, Picking, Packing, and Shipping.</strong></li><li>With our inventory management solution, logistics business service providers can streamline the transfer of logistics inventory directly from <strong>Inbound Shipments</strong> to <strong>Outbound Shipments</strong> without the need of <strong>Storage,</strong> reducing logistics businesses <strong>Handling Costs</strong> and speeding up order fulfillment.</li><li>Logistics Businesses can also access their inventory data and perform inventory tasks on the go using <strong>Mobile Devices,</strong> improving operational <strong>Efficiency</strong> and <strong>Flexibility.</strong></li></ul>"
-  );
+function two() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Inventory Management.png");
+  $("#paragraph").html("<ul> <li>Automatic Identification & Data Capture (AIDC): Tag orders with unique AIDC codes for streamlined inventory tasks such as receiving, picking, packing, and shipping.</li><li>Direct Transfer of Inventory: Reduce handling costs by transferring inventory directly from inbound to outbound shipments without the need for storage. </li><li>Mobile Access to Inventory Data: Perform inventory tasks and access data on the go, improving operational efficiency and flexibility.</li></ul>");
 }
 
-function shippingManagementSystem() {
-  $("#beyond-bookshell-img").attr("src", "img/logistics/distribution 1.png");
-  $("#paragraph").html(
-    "<ul><li>With our advanced shipment management system, businesses can generate <strong>Shipping Labels,</strong> including <strong>Carrier-Specific</strong> labels with <strong>Automatic Identification and Data Capture (AIDC)</strong> code and integrate it with the orders for efficient <strong>Package Tracking.</strong></li><li>With <strong>Batch Processing</strong> feature in our shipment management solution, logistics business can process <strong>Multiple Shipments</strong> at once in the form of batches, saving businesses crucial time and manual processing of bulk shipments.</li><li>Additionally, logistics businesses can easily manage <strong>Order Return Shipments,</strong> including generating <strong>Return Labels,</strong> to differentiate the return order from the rest.</li></ul>"
-  );
+function three() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Shipment Management.png");
+  $("#paragraph").html("<ul> <li>Shipping Label Generation: Create carrier-specific labels with AIDC codes for efficient package tracking and order integration. </li><li>Batch Processing: Process multiple shipments at once, saving time and reducing manual handling of bulk orders.</li><li>Return Shipment Management: Easily manage return shipments by generating return labels to distinguish them from regular orders.</li></ul>");
 }
 
-function fleetManagementSolutions() {
-  $("#beyond-bookshell-img").attr(
-    "src",
-    "img/logistics/logistics-delivery 1.png"
-  );
-  $("#paragraph").html(
-    "<ul><li>With our fleet management system, businesses can create a <strong>Automatic Identification and Data Capture (AIDC)</strong> code for each <strong>Fleet Vehicle</strong> and associate it with logistics orders scheduled for that route, simplifying <strong>Real-Time</strong> order tracking.</li><li>Additionally with fleet management system logistics businesses can <strong>Plan</strong> and <strong>Optimize Delivery Routes</strong> to minimize fleet <strong>Fuel Consumption, Reduce Driving Time,</strong> improving overall fleet efficiency and timely order delivery.</li><li>Also, our fleet logistics management system allows logistics business to utilize <strong>Electronic Logging Device (ELD's)</strong> to accurately record driver hours and ensure compliance with <strong>Hours of Service (HOS)</strong> regulations, reducing the risk of fines and penalties.</li></ul>"
-  );
+function four() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Fleet Logistics Fuel Management.png");
+  $("#paragraph").html("<ul> <li>AIDC for Fleet Vehicles: Assign AIDC codes to fleet vehicles for real-time tracking and order association.</li><li>Route Optimization: Plan and optimize delivery routes to minimize fuel consumption and reduce driving time.</li><li>ELD Compliance: Use Electronic Logging Devices (ELDs) to track driver hours and ensure compliance with Hours of Service (HOS) regulations, reducing risks of fines.</li></ul>");
 }
 
-function fleetFuelManagementSolutions() {
-  $("#beyond-bookshell-img").attr("src", "img/logistics/fuel-pump 1.png");
-  $("#paragraph").html(
-    "<ul><li>With fleet fuel management system, businesses have the capability to monitor <strong>Real-Time Fleet Fuel Consumption</strong> and <strong>Vehicle Fuel Utilization.</strong> Additionally, with access to <strong>Real-Time Fuel Prices,</strong> businesses can adjust shipping routes accordingly for optimal efficiency.</li><li>With our fleet management system, businesses can <strong>Detect</strong> and <strong>Deter Fuel</strong> theft or unauthorized fuel usage using <strong>Sophisticated Monitoring</strong> and <strong>Alert Systems.</strong></li><li>Additionally, fleet managers can access fleet fuel management features and data on-the-go using <strong>Mobile Devices,</strong> enabling them to monitor fuel usage and performance from anywhere.</li></ul>"
-  );
+function five() {
+  $("#beyond-bookshell-img").attr("src", "img/real-estate/Real Estate Icons-latest/Feature - Booking & Scheduling.png");
+  $("#paragraph").html("<ul> <li>Real-Time Fuel Monitoring: Monitor fleet fuel consumption and vehicle utilization in real time.</li><li>Fuel Price Optimization: Adjust shipping routes based on real-time fuel prices for optimal efficiency.</li><li>Theft Detection: Detects and deter fuel theft with advanced monitoring and alert systems.</li><li>Mobile Access: Access fleet fuel management features and data on-the-go via mobile devices.</li></ul>");
 }
 
-function vehicleHealthManagement() {
-  $("#beyond-bookshell-img").attr("src", "img/logistics/logistics 1.png");
-  $("#paragraph").html(
-    "<ul><li>With vehicle health management solution, logistics businesses can access <strong>Real-Time</strong> performance metrics of their fleet vehicles, including <strong>Tyre Pressure, Oil Pressure, Coolant Level,</strong> and <strong>Engine Temperature</strong> which enables logistics businesses to early identify potential issues, and prevent costly vehicle breakdowns.</li><li> Logistics Businesses can also enhance their fleet logistics vehicle utilization by analyzing <strong>Vehicle Usage Patterns,</strong> identifying opportunities for efficiency improvement, <strong>Minimizing Idle Time,</strong> and maximizing productivity.</li><li>Furthermore, utilizing a vehicle health management solution enables logistics businesses to oversee <strong>Vehicle Compliance</strong> with regulatory standards such as <strong>Emissions</strong> and <strong>Safety Inspections,</strong> thereby preventing potential <strong>Penalties</strong> and <strong>Overhead Costs</strong> associated with vehicle non-compliance.</li></ul>"
-  );
+function six() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Vehicle Health Management.png");
+  $("#paragraph").html("<ul> <li>Real-Time Performance Monitoring: Access real-time metrics like tyre pressure, oil pressure, coolant levels, and engine temperature to identify issues early.</li><li>Efficiency Optimization: Analyze vehicle usage patterns to reduce idle time and maximize productivity. </li><li>Compliance Tracking: Oversee vehicle compliance with emissions and safety standards to avoid penalties and reduce overhead costs.</li></ul>");
 }
 
-function WarehouseManagement() {
-  $("#beyond-bookshell-img").attr("src", "img/logistics/warehouse 1.png");
-  $("#paragraph").html(
-    "<ul><li>With our advanced logistics management software, logistics businesses can centrally manage their multiple<strong> Agencies</strong> and <strong>Logistics Warehouses</strong> across various demographics, allowing logistics businesses to efficiently coordinate and oversee their entire <strong>Logistics Network,</strong> including <strong>Warehouse Operations, Inventory Management,</strong> and much more. </li><li>Business can also track logistics inventory by <strong>Batch</strong> or <strong>Lot Numbers</strong> across their multiple logistics warehouses to ensure <strong>Traceability</strong> and compliance with regulatory requirements.</li><li>Through our agency & warehouse logistics management solution businesses can also implement automation technologies such as <strong>Barcode Scanning, RFID (Radio Frequency Identification),</strong> and <strong>Automated Storage and Retrieval Systems (AS/RS)</strong> to improve efficiency and accuracy across their warehouses.</li></ul>"
-  );
+// function seven() {
+//     $("#beyond-bookshell-img").attr("src", "img/real-estate/secure-payment 1.png");
+//     $("#paragraph").html("<ul> <li>To facilitate safe online transactions for <strong>Deposits, Rent</strong>, and property acquisitions, our real estate management service has been integrated with <strong>Reputable, Secure, Trusted Payment and Unified Payment Interface and Gateways.</strong></li> <li>Consumers have access to various modes of payments, including <strong> E-Wallets, Online Banking, Credit/Debit Cards, and Bank Transfers for Faster Payments.</strong> </li><li>Our system generates <strong>Instant Payment Receipts</strong> and provides <strong>Real-Time Notifications</strong> to all the parties involved in the transaction.</li></ul>");
+// }
+
+function seven() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Agency and Warehouse.png");
+  $("#paragraph").html("<ul> <li>Centralized Network Management: Efficiently manage multiple agencies and warehouses, ensuring smooth coordination across the logistics network.</li><li>Batch & Lot Tracking: Track inventory by batch or lot numbers for enhanced traceability and regulatory compliance.</li><li>Automation Integration: Implement automation technologies like barcode scanning, RFID, and AS/RS to boost efficiency and accuracy in warehouse operations.</li></ul>");
 }
 
-function digitalLockSolutions() {
-  $("#beyond-bookshell-img").attr("src", "img/logistics/digital-door 1.png");
-  $("#paragraph").html(
-    "<ul><li>With a digital lock solution, our logistics management software ensures that only authorized person can access goods and facilities, as digital locks are equipped with <strong>Keyless Entry Systems, Biometric Authentication,</strong> or <strong>Digital Key Access.</strong></li><li>Businesses can also maintain a detailed audit trail of access events, including <strong>Timestamps</strong> and <strong>User Identities,</strong> providing visibility into who accessed the lock and when enhancing security and accountability.</li><li>Businesses can also oversee the status of locks and access events in <strong>Real-Time,</strong> promptly receiving alerts for any <strong>Unauthorized Access</strong> attempts or security breaches.</li></ul>"
-  );
+
+function eight() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Digital Lock Solution.png");
+  $("#paragraph").html("<ul> <li>Secure Access Control: Keyless entry, biometric authentication, or digital key access ensures only authorized personnel can access goods and facilities.</li><li>Audit Trail: Maintain a detailed record of access events, including timestamps and user identities, for enhanced security and accountability.</li><li>Real-Time Monitoring: Receive immediate alerts for unauthorized access attempts or security breaches, ensuring prompt responses to potential threats.</li></ul>");
 }
 
-function expenseManagementSystem() {
-  $("#beyond-bookshell-img").attr("src", "img/logistics/cash-flow 1.png");
-  $("#paragraph").html(
-    "<ul><li>With expense management solutions logistic businesses can track expenses incurred throughout the logistics process, including <strong>Transportation Costs, Fuel Expenses,</strong> and <strong>Labor Costs</strong> to calculate the overall profit they made in the entire shipping process.</li><li>Our expense management solution additionally facilitates support for <strong>Multiple Currencies,</strong> allowing <strong>Accurate Conversion</strong> and reporting of expenses incurred in international operations across various currency denominations.</li><li>Our system also preserves a comprehensive audit trail of <strong>Expense Transactions,</strong> recording the progression of <strong>Expense Approvals, Modifications,</strong> and <strong>Adjustments,</strong> serving compliance and audit objectives.</li></ul>"
-  );
+function nine() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Expense Management.png");
+  $("#paragraph").html("<ul> <li>Track Logistics Expenses: Monitor transportation, fuel, and labor costs to calculate overall profit in the shipping process.</li><li>Multi-Currency Support: Accurately convert and report expenses in various currencies for international operations.</li><li>Audit Trail: Maintain a detailed record of expense transactions, including approvals, modifications, and adjustments, ensuring compliance and audit readiness.</li></ul>");
 }
 
-function driverBehaviorMonitoring() {
-  $("#beyond-bookshell-img").attr("src", "img/logistics/driver 1.png");
-  $("#paragraph").html(
-    "<ul><li>Our <strong>AI-Based</strong> driver behavior tracking system allows fleet managers to know the exact location of vehicles at a point of time, helping fleet managers to monitor and ensure drivers stick to assigned <strong>Routes</strong> and <strong>Schedules.</strong></li><li>With driver behavior monitoring system, fleet managers can access <strong>real-time</strong> data on <strong>Vehicle Speed,</strong> instances of <strong>Harsh Braking,</strong> and detect signs of <strong>Driver Fatigue,</strong> which helps them to identify key areas of improvements and provide targeted coaching and training. </li><li>Our system is equipped to promptly alert fleet drivers in case if they exceed <strong>Speed Limits,</strong> neglect to fasten their <strong>Seat Belts,</strong> or exhibit unusual <strong>Driving Behavior.</strong></li></ul>"
-  );
+function ten() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Driver Behavior Management.png");
+  $("#paragraph").html("<ul> <li>Real-Time Location Tracking: Know the exact location of vehicles to ensure drivers follow assigned routes and schedules.</li><li>Driver Behavior Monitoring: Track vehicle speed, harsh braking, and driver fatigue to identify improvement areas and provide targeted coaching.</li><li>Instant Alerts: Alert drivers about speed limit violations, seat belt use, or unusual driving behavior for better safety and compliance.</li></ul>");
 }
 
-function customerSupport() {
-  $("#beyond-bookshell-img").attr(
-    "src",
-    "img/logistics/customer-service 2.png"
-  );
-  $("#paragraph").html(
-    "<ul><li>Customers can log their queries regarding their logistics order from multiple channels like <strong>Email, WhatsApp,</strong> through <strong>AI Chatbot,</strong> and directly from <strong>Calls.</strong> </li><li>Our logistics management software sends an automated updates to customers about their <strong>Order Status,</strong> including <strong>Dispatch, Transit Updates,</strong> and <strong>Delivery Confirmations.</strong> </li><li>Communication tools enable customer service teams to communicate seamlessly internally and with <strong>Customers,</strong> ensuring that all important information about a customer's issue is <strong>Available</strong> and <strong>Actionable.</strong></li></ul>"
-  );
+function eleven() {
+  $("#beyond-bookshell-img").attr("src", "img/Logistics Industry Page (1)/Logistics Industry Page/Feature - Customer Support.png");
+  $("#paragraph").html("<ul> <li>Multi-Channel Query Logging: Customers can log queries via Email, WhatsApp, AI Chatbot, or Calls.</li><li>Automated Order Updates: Customers receive automated status updates on Dispatch, Transit, and Delivery.</li><li>Seamless Communication: Internal teams and customers can communicate effectively, ensuring all critical information is available and actionable.</li></ul>");
 }
+
+
+
+
+
+
+
