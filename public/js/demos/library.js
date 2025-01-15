@@ -38,12 +38,12 @@ function selectListItem(listItem) {
 }
 
 function one() {
-    $("#beyond-bookshell-img").attr("src", "img/real-estate/Real Estate Icons-latest/Feature - Property Inventory Management.png");
+    $("#beyond-bookshell-img").attr("src", "img/Library Management System (Industry Page) (2)/Feature - Digital Library Management.png");
     $("#paragraph").html("<ul><li>Our digital library management system allows librarians to store and manage digital assets like eBooks, audiobooks, and multimedia files.</li><li>Our system supports various digital formats for seamless accessibility across devices. </li><li>Integrated analytics provide insights into usage patterns, aiding informed resource allocation and collection development. </li></ul>");
 }
 
 function two() {
-    $("#beyond-bookshell-img").attr("src", "img/real-estate/Real Estate Icons-latest/Feature - Broker Management Solution.png");
+    $("#beyond-bookshell-img").attr("src", "img/Library Management System (Industry Page) (2)/Feature - Search & Discovery.png");
     $("#paragraph").html("<ul> <li>Our library management system's search and discovery tools features a robust search engine for keyword and advanced queries, including Boolean operators and filters for genre, author, date, and format.</li><li>Our system can suggest personalized suggestions based on user activity and borrowing history to enhance user engagement. </li><li>Visual search capabilities, like uploading book cover photos and previews, make discovering resources more engaging and accessible.</li></ul>");
 }
 
@@ -53,12 +53,12 @@ function three() {
 }
 
 function four() {
-    $("#beyond-bookshell-img").attr("src", "img/real-estate/Real Estate Icons-latest/Feature - Rental Management.png");
+    $("#beyond-bookshell-img").attr("src", "img/Library Management System (Industry Page) (2)/Feature membership management plan.png");
     $("#paragraph").html("<ul> <li>The reservation and hold management tool in our library management system enables patrons to place reservations on checked-out items, ensuring priority access once available.</li><li>Automated reminders via email or SMS notify patrons when reserved items are ready for collection, reducing wait times.</li><li>Librarians can efficiently manage and prioritize holds, track reservation statuses, and handle adjustments, cancellations, or reservation updates seamlessly.</li></ul>");
 }
 
 function five() {
-    $("#beyond-bookshell-img").attr("src", "img/real-estate/Real Estate Icons-latest/Feature - Booking & Scheduling.png");
+    $("#beyond-bookshell-img").attr("src", "img/Library Management System (Industry Page) (2)/Feature - Online Secure Payment.png");
     $("#paragraph").html("<ul> <li>The Membership Plan Management tool allows libraries to create and manage tailored membership plans for different user groups, such as Students, Adults, Seniors, and Corporate Members.</li><li>Libraries can set borrowing limits, lending terms, and access privileges based on membership types.</li><li>The system simplifies new user registration and membership renewals while sending automated reminders for renewals and overdue payments, ensuring seamless patron engagement and library management.</li></ul>");
 }
 
@@ -68,7 +68,7 @@ function five() {
 // }
 
 function six() {
-    $("#beyond-bookshell-img").attr("src", "img/real-estate/Real Estate Icons-latest/Feature - Map Integration.png");
+    $("#beyond-bookshell-img").attr("src", "img/Library Management System (Industry Page) (2)/Feature - Automated Notification.png");
     $("#paragraph").html("<ul> <li>Our secure online payment system eliminates in-person transactions and cash handling, allowing patrons to pay fines, fees, and subscriptions through a secure gateway.</li><li>Patrons can use various payment methods, including digital wallets, debit cards, and credit cards. </li><li>The system offers real-time updates on account status and automates payment reminders, enhancing transparency and reducing overdue payments.</li></ul>");
 }
 
@@ -78,7 +78,7 @@ function six() {
 // }
 
 function seven() {
-    $("#beyond-bookshell-img").attr("src", "img/real-estate/Real Estate Icons-latest/Feature - Mortage Calculator.png");
+    $("#beyond-bookshell-img").attr("src", "img/Library Management System (Industry Page) (2)/Feature - Reporting & Analytics.png");
     $("#paragraph").html("<ul> <li>Libraries can help patrons avoid late fees and manage borrowed items with automatic notifications for upcoming returns, overdue books, and due dates.</li><li>Regular reminders & updates are sent via WhatsApp, SMS, or email for user convenience.</li><li>Patrons also receive updates on library events, closures, new arrivals in preferred genres, and availability of reserved items, ensuring timely and personalized communication.</li></ul>");
 }
 
